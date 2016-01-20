@@ -5,7 +5,7 @@
 @font-face {
   font-family: 'DINNextLTPro-Light';
   src: url('fonts/2D247A_3_0.eot');
-  src: url('fonts/2D247A_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/2D247A_3_0.woff2') format('woff2'),url('fonts/2D247A_3_0.woff') format('woff'),url('fonts/2D247A_3_0.ttf') format('truetype');}
+  src: url('fonts/2D247A_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/2D247A_3_0.woff2') format('woff2'),url('fonts/2D247A_3_0.woff') format('woff'),url('fonts/2D247A_3_0.ttf') format('truetype');
 }
 
 /**
@@ -15,10 +15,6 @@
 @font-face {
   font-family: 'CorporateS-Light';
   src: url("fonts/c063002tWeb.eot");
-}
-
-@font-face {
-  font-family: 'CorporateS-Light';
   src: url("fonts/c063002tWeb.woff") format("woff");
 }
 
@@ -29,10 +25,6 @@
 @font-face {
   font-family: 'CorporateS-Regular';
   src: url("fonts/c063003tWeb.eot");
-}
-
-@font-face {
-  font-family: 'CorporateS-Regular';
   src: url("fonts/c063003tWeb.woff") format("woff");
 }
 
@@ -43,10 +35,6 @@
 @font-face {
   font-family: 'CorporateS-Demi';
   src: url("fonts/c063004tWeb.eot");
-}
-
-@font-face {
-  font-family: 'CorporateS-Demi';
   src: url("fonts/c063004tWeb.woff") format("woff");
 }
 
@@ -57,9 +45,6 @@
 @font-face {
   font-family: 'CorporateS-Regular-Italic';
   src: url("fonts/c063023tWeb.eot");
-}
-
-@font-face {
-  font-family: 'CorporateS-Regular-Italic';
   src: url("fonts/c063023tWeb.woff") format("woff");
 }
+

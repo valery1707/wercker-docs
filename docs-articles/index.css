@@ -32,13 +32,12 @@ body.sidebar-open .docs-articles {
 @media screen and (min-width: 768px) {
   .flex-outer.docs-content {
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .docs-articles {
-    flex: 1 1 75%;
-    order: 2;
-    padding: 30px;
+    flex: 1 1 80%;
+    margin-left: 40px;
     padding-top: 20px;
     z-index: 2;
     position: relative;
@@ -60,6 +59,23 @@ body.sidebar-open .docs-articles {
     max-width: 70%;
   }
 }
+
+/**
+ * Article Paragraph
+ */
+
+.docs-articles p {
+  margin-top: 15px;
+}
+
+.docs-articles p + p {
+  margin-top: 20px;
+}
+
+.docs-articles p a {
+  font-size: var(--fontSize_medium);
+}
+
 
 /**
  * Anchor targets
@@ -153,16 +169,16 @@ body.sidebar-open .docs-articles {
 
 .docs-articles > ul,
 .docs-articles > ol {
-  margin-top: 5px;
-  margin-left: 10px;
-  line-height: var(--lineHeight_loose);
+  margin: 30px 0;
+  margin-left: 20px;
+  line-height: var(--lineHeight_base);
   color: var(--color-grey_base);
   list-style: none;
 }
 
 .docs-articles > ul li,
 .docs-articles > ol li {
-  line-height: var(--lineHeight_loose);
+  line-height: var(--lineHeight_base);
 }
 
 .docs-articles > ul li:before,
@@ -212,7 +228,7 @@ body.sidebar-open .docs-articles {
 blockquote {
   margin-top: 30px;
   padding-left: 30px;
-  border-left: 1px solid var(--color-pink_base);
+  border-left: 1px solid var(--color-grey_base);
 }
 
 blockquote > p {
@@ -220,28 +236,35 @@ blockquote > p {
 }
 
 blockquote  p {
-  font-size: var(--fontSize_small);
-  color: var(--color-grey_base);
-  font-weight: var(--fontWeight_light);
+  font-family: 'CorporateS-Regular-Italic';
+  font-size: var(--fontSize_base);
+  color: var(--color-grey_dark);
   line-height: var(--lineHeight_loose);
-  font-style: italic;
+}
+blockquote p a {
+  font-size: var(--fontSize_base);
 }
 
 /**
  * Important note.
 */
 
-hr + blockquote {
+.docs-articles hr + blockquote {
   border: none;
   padding: 0;
 }
 
-hr + blockquote > p{
+.docs-articles hr + blockquote > p {
   margin: 0;
   padding: 10px;
+  border-radius: 4px;
   border: 1px solid var(--color-grey_lighter);
   background-color: var(--color-grey_lightest);
-  border-radius: 4px;
+  font-size: var(--fontSize_base);
+}
+
+.docs-articles hr + blockquote > p a {
+  font-size: var(--fontSize_base);
 }
 
 /**
@@ -256,23 +279,20 @@ hr + blockquote > p{
 
 .docs-articles.docs-articles_learn a[title~="next"] {
   float: right;
-  font-weight: var(--fontWeight_semibold);
   font-size: var(--fontSize_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="previous"] {
   float: left;
-  font-weight: var(--fontWeight_semibold);
   font-size: var(--fontSize_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="nav"] {
   border-radius: 2px;
-  padding: 10px 14px;
+  padding: 12px 20px;
   text-decoration: none;
   color: var(--color-white);
-  font-size: var(--fontSize_small);
-  font-weight: var(--fontWeight_base);
+  font-size: var(--fontSize_base);
   background-color: var(--color-skyblue_base);
   transition: all var(--duration_fastest) var(--easing_smooth);
 }

@@ -84,10 +84,8 @@
 .footer-links li {
   display: inline;
   margin-right: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: var(--fontSize_smaller);
+  font-size: var(--fontSize_small);
   color: var(--color-grey_light);
-  font-weight: var(--fontWeight_light);
 }
 
 .footer-links li:first-child {

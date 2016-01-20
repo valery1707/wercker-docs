@@ -13,7 +13,6 @@
 @media screen and (min-width: 768px) {
   .learn {
     display: flex;
-    height: 65px;
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-grey_light);
   }
@@ -41,17 +40,13 @@
 .learnblocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-content: space-around;
 }
 
 /**
  * Learnblocks items
  */
-
-.learnblocks-item {
-  flex: 1 100%;
-}
 
 .learnblocks-item-title {
   margin-left: 10px;
@@ -65,17 +60,12 @@
   color: var(--color-skyblue_base);
 }
 
-.learnblocks-item.active .learnblocks-item-icon .icon-stroke {
-  stroke: var(--color-skyblue_base);
-}
-
-.learnblocks-item.active .learnblocks-item-icon .icon-fill {
-  fill: var(--color-skyblue_base);
-}
-
 @media screen and (min-width: 768px) {
   .learnblocks-item {
-    flex: 1 25%;
+    padding: 5px 15px;
+  }
+  .learnblocks-item.active {
+    border-bottom: 2px solid var(--color-skyblue_base);
   }
 }
 
@@ -87,6 +77,14 @@
   float: left;
   margin-top: 5px;
   text-decoration: none;
+}
+
+.learnblocks-item.active .learnblocks-item-icon .icon-stroke {
+  stroke: var(--color-skyblue_base);
+}
+
+.learnblocks-item.active .learnblocks-item-icon .icon-fill {
+  fill: var(--color-skyblue_base);
 }
 
 /**

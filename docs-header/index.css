@@ -3,17 +3,13 @@
  */
 
 .header_homepage {
-  position: relative;
   height: 180px;
   text-align: center;
   background-color: var(--color-grey_lightest);
 }
 
 .header_homepage h1 {
-  position: relative;
-  font-weight: bold;
   font-size: 50px;
-  color: #60718C;
   line-height: 60px;
 }
 
@@ -23,7 +19,7 @@
 
 @media screen and (min-width: 768px) {
   .header_homepage {
-    position: relative;
+    display: block;
     height: 32vh;
     max-height: 250px;
     text-align: left;
@@ -31,10 +27,7 @@
   }
 
   .header_homepage h1 {
-    left: -10px;
-    font-size: 140px;
-    letter-spacing: -5px;
-    line-height: 110px;
+
   }
 
   .header_homepage .mobile-logo {
@@ -52,7 +45,7 @@
 }
 
 .header_small {
-  height: 130px;
+  height: 220px;
 }
 
 @media screen and (min-width: 768px) {

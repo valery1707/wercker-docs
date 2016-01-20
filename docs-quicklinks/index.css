@@ -17,10 +17,11 @@
 }
 
 .doc-quicklinks-item ul {
-  line-height: var(--lineHeight_loose);
-  font-size: var(--fontSize_base);
-  color: var(--color-grey_base);
   list-style: none;
+}
+.doc-quicklinks-item ul li a {
+  line-height: var(--lineHeight_tight);
+  font-size: var(--fontSize_small);
 }
 
 .doc-quicklinks-item li:before {

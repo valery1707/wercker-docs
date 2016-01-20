@@ -42,8 +42,7 @@ body.sidebar-open {
 
 @media screen and (min-width: 768px) {
   .sidebar {
-    flex: 1 1 25%;
-    order: 1;
+    flex: 1 1 20%;
     z-index: 2;
     position: relative;
     width: auto;
@@ -55,7 +54,6 @@ body.sidebar-open {
   .section-sidebar {
     padding-left: 10px;
     padding-right: 20px;
-    border-right: 1px solid var(--color-grey_light);
   }
 }
 
@@ -126,22 +124,11 @@ body.sidebar-open {
 .sidebar-li {
   position: relative;
   margin-left: 12px;
-}
-
-.sidebar-li {
-  font-size: var(--fontSize_small);
-  font-weight: var(--fontWeight_base);
-  line-height: var(--lineHeight_loose);
-  font-family: 'Open Sans', sans-serif;
-  color: var(--color-blue_base);
   text-decoration: none;
-}
-
-.sidebar-li:before {
-  position: absolute;
-  left: -10px;
-  top: -6px;
-  content: "\203A \a0\20";
+  color: var(--color-blue_base);
+  font-size: var(--fontSize_base);
+  line-height: var(--lineHeight_loose);
+  font-family: 'CorporateS-Regular', sans-serif;
 }
 
 .sidebar-li_active {
@@ -161,7 +148,6 @@ body.sidebar-open {
 
 .sidebar-list .sidebar-li_sub {
   position: relative;
-  margin: 10px 0 10px 0;
   margin-left: 20px;
 }
 
@@ -169,18 +155,16 @@ body.sidebar-open {
   margin-top: 2px;
 }
 
+.sidebar-li_sub a {
+  font-size: var(--fontSize_base);
+}
+
 .sidebar-li_sub_active a {
   text-decoration: none;
   pointer-events: none;
   color: var(--color-skyblue_dark);
-  font-weight: var(--fontWeight_base);
 }
 
-.sidebar-li_sub_active a:before {
-  content: "\203A \a0\20";
-  position: absolute;
-  left: -10px;
-}
 
 /**
  * Sidebar section learn.
@@ -191,23 +175,23 @@ body.sidebar-open {
   margin-top: 10px;
 }
 
-.section-sidebar.section-learn .sidebar-li_sub_active a:before,
-.section-sidebar.section-learn .sidebar-li:before {
-  content: "";
-}
-
 .section-sidebar.section-learn .sidebar-li_sub {
   margin: 0;
-  margin-right: 20px;
-  padding: 15px;
+  margin-bottom: 6px;
+  padding: 12px;
   border-radius: 2px;
 }
 
+.section-sidebar.section-learn .sidebar-li_sub a {
+  font-family: 'CorporateS-Light';
+  text-decoration: none;
+}
+
 .section-sidebar.section-learn .sidebar-li_sub_active {
-  background-color: var(--color-skyblue_base);
+  background-color: var(--color-grey_lighter);
 }
 .section-sidebar.section-learn .sidebar-li_sub_active a {
-  color: var(--color-white);
+  color: var(--color-blue_base);
 }
 
 .section-sidebar.section-learn .sidebar-list {

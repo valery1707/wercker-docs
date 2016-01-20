@@ -22,8 +22,8 @@
   --fontSize_base: 16px;
   --fontSize_medium: 18px;
   --fontSize_large: 22px;
-  --fontSize_larger: 36px;
-  --fontSize_largest: 56px;
+  --fontSize_larger: 42px;
+  --fontSize_largest: 66px;
   --fontSize_jumbo: 140px;
 }
 
@@ -41,34 +41,12 @@
  * Typography settings.
  */
 
-.DINNextLTPro-Bold {
-  font-family: DINNextLTPro-Bold;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.DINNextLTPro-Regular {
-  font-family: DINNextLTPro-Regular;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.DINNextLTPro-Medium {
-  font-family: DINNextLTPro-Medium;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.DINNextLTPro-Light {
-  font-family: DINNextLTPro-Light;
-  font-weight: normal;
-  font-style: normal;
-}
 
 html,
 body,
-a {
-  font-family: 'Open Sans', sans-serif;
+p, a, h2, h3, h4, h5 {
+  font-family: 'CorporateS-Regular', sans-serif;
+  color: var(--color-grey_darker);
 }
 
 a {
@@ -83,22 +61,12 @@ a:hover {
 }
 
 p {
-  font-family: 'Merriweather', serif;
   line-height: var(--lineHeight_loose);
-  color: var(--color-blue_base);
-  font-size: var(--fontSize_small);
-  font-weight: var(--fontWeight_light);
-  word-wrap: break-word;
-  text-justify: distribute;
-  word-spacing: 0px;
-  text-align: justify;
+  font-size: var(--fontSize_medium);
 }
 
 article p, .docs-articles p {
-  font-family: 'Merriweather', serif;
   margin-top: 15px;
-  text-justify: inter-word;
-  text-align: justify;
 }
 
 em {
@@ -117,28 +85,21 @@ h1 {
 }
 
 h2 {
-  font-family: DINNextLTPro-Light;
   line-height: var(--lineHeight_looser);
   font-size: var(--fontSize_larger);
-  color: var(--color-blue_base);
-  letter-spacing: -1px;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
 h2 + p {
   line-height: var(--lineHeight_loose);
-  font-weight: var(--fontWeight_base);
-  font-size: var(--fontSize_medium);
-  color: var(--color-blue_light);
+  font-size: var(--fontSize_large);
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
 h2 + p > a, h2 + p > em {
-  font-family: 'Merriweather', serif;
   line-height: var(--lineHeight_loose);
-  font-weight: var(--fontWeight_base);
   font-size: var(--fontSize_medium);
 }
 
@@ -176,7 +137,7 @@ code {
 
 ul li,
 ol li {
-  font-family: 'Merriweather', serif;
+  font-family: 'CorporateS-Light', sans-serif;
   line-height: var(--lineHeight_tight);
   font-weight: var(--fontWeight_light);
   font-size: var(--fontSize_small);
@@ -186,7 +147,7 @@ ol li {
 }
 
 strong {
-  font-weight: var(--fontWeight_bold);
+  font-family: 'CorporateS-Demi', sans-serif;
 }
 
 /*

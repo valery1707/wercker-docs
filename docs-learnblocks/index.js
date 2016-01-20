@@ -2,18 +2,22 @@ const window = require('global/window');
 const slugify = require('slugificate');
 const react = require('react');
 const util = require('util');
+var fs = require('fs');
 
 const dom = react.DOM;
-
 const blocks = [
   'basics',
-  'wercker.yml',
   'containers',
   'pipelines',
-  'steps',
-  'build',
-  'deploy'
+  'steps'
 ];
+
+var icons = {
+  basics : fs.readFileSync(__dirname + '/icon-basics.svg', 'utf8'),
+  containers : fs.readFileSync(__dirname + '/icon-containers.svg', 'utf8'),
+  pipelines : fs.readFileSync(__dirname + '/icon-pipelines.svg', 'utf8'),
+  steps : fs.readFileSync(__dirname + '/icon-steps.svg', 'utf8')
+};
 
 /**
  * Create class.
@@ -33,12 +37,17 @@ function render () {
         dom.a({
           className: 'learnblocks-item-icon ',
           href: '/learn/' + slugify(block) + '/introduction.html'
-        }, dom.img({src: '/images/icon-' + block + '.svg', alt: block}),
-          dom.div({className: 'learnblocks-item-title'}, block)
-        ),
-        dom.div({
-          className: 'learnblocks-item_active'
-        })
+        },
+        dom.span({
+          className: 'learnblocks-item-icon',
+          dangerouslySetInnerHTML: {
+            __html: icons[block]
+          }
+        }),
+        dom.span({
+          className: 'learnblocks-item-title',
+          children: block
+        }))
       );
     })
   );

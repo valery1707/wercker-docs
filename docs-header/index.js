@@ -17,6 +17,9 @@ module.exports = react.createClass({
     var data = null;
 
     switch (base) {
+      case 'learn':
+        data = 'A guide to learn wercker';
+        break;
       case 'docs':
         data = 'Docs';
         break;
@@ -41,7 +44,8 @@ module.exports = react.createClass({
  */
 
 function render () {
-  return dom.div({className: 'flex-outer header_small'},
+  const base = getWindowUrl();
+  return dom.div({className: 'flex-outer header_small header_' +  base},
     dom.div({className: 'flex-inner'},
       dom.h1({children: this.props.data})
     )

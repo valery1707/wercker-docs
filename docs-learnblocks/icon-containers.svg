@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="101px" height="114px" viewBox="0 0 101 114" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
-    <title>Imported Layers</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Icons" sketch:type="MSArtboardGroup" transform="translate(-390.000000, -43.000000)" stroke="#FFFFFF" stroke-width="2">
-            <path d="M418.5,78 L463.662585,78 L463.662585,123.162585 L418.5,123.162585 L418.5,78 Z M430.2,89.7 L452.7,89.7 L452.7,112.2 L430.2,112.2 L430.2,89.7 Z M463.662585,78 L452.371939,89.2906463 L463.662585,78 Z M452.371939,111.871939 L463.662585,122.706443 L452.371939,111.871939 Z M429.790646,111.871939 L418.5,123.162585 L429.790646,111.871939 Z M429.790646,89.2906463 L418.87214,78 L429.790646,89.2906463 Z" id="Boxes" sketch:type="MSShapeGroup"></path>
+<svg width="30px" height="37px" viewBox="0 0 30 37" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" >
+        <g class="icon-stroke" transform="translate(1.000000, 1.000000)" stroke-width="1.5" stroke="#9D9E9E">
+            <path d="M-7.00828284e-16,8.02561262 L13.9982069,16.0505658 L27.9990702,8.02495321 M13.998871,0 L13.9982069,0 L13.998871,0 Z"></path>
+            <path d="M13.75,16 L13.75,31.6245155" stroke-linecap="square"></path>
+            <path d="M14.0008633,0 L0.00132822914,8.02561262 L0,8.02561262 L0.00132822914,24.0761784 L13.9995351,32.1011317 L28.0003985,24.075519 L27.9997344,8.02561262 L14.0008633,0 Z M14.0001992,16.0505658 L13.9995351,16.0505658 L14.0001992,16.0505658 Z"></path>
         </g>
     </g>
 </svg>

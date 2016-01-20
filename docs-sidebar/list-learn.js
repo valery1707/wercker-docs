@@ -21,7 +21,6 @@ function learnList () {
   return dom.section({className: sectionClass},
     dom.section({className: 'sidebar-list'},
       dom.ul(null,
-        currentChapter,
         list
       ),
       dom.ul({className: 'sidebar-list_chapters'},

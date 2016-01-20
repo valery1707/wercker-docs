@@ -1,64 +1,65 @@
 /**
- * @license
- * MyFonts Webfont Build ID 2958458, 2015-01-23T05:08:26-0500
- *
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are
- * explicitly restricted from using the Licensed Webfonts(s).
- *
- * You may obtain a valid license at the URLs below.
- *
- * Webfont: DINNextLTPro-Bold by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/din-next/pro-bold/
- * Copyright: Copyright &#x00A9; 2008 - 2009 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH.
- * Licensed pageviews: 500,000
- *
- * Webfont: DINNextLTPro-Regular by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/din-next/pro-regular/
- * Copyright: Copyright &#x00A9; 2008 - 2009 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH.
- * Licensed pageviews: 250,000
- *
- * Webfont: DINNextLTPro-Medium by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/din-next/pro-medium/
- * Copyright: Copyright &#x00A9; 2010 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH.
- * Licensed pageviews: 250,000
- *
- * Webfont: DINNextLTPro-Light by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/din-next/pro-light/
- * Copyright: Copyright &#x00A9; 2010 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH.
- * Licensed pageviews: 250,000
- *
- *
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2958458
- *
- * © 2015 MyFonts Inc
-*/
-
-
-/* @import must be at top of file, otherwise CSS will not work */
-/*@import url("//hello.myfonts.net/count/2d247a");*/
-
-
-@font-face {
-  font-family: 'DINNextLTPro-Bold';
-  src: url('fonts/2D247A_0_0.eot');
-  src: url('fonts/2D247A_0_0.eot?#iefix') format('embedded-opentype'),url('fonts/2D247A_0_0.woff2') format('woff2'),url('fonts/2D247A_0_0.woff') format('woff'),url('fonts/2D247A_0_0.ttf') format('truetype');}
-
-
-@font-face {
-  font-family: 'DINNextLTPro-Regular';
-  src: url('fonts/2D247A_1_0.eot');
-  src: url('fonts/2D247A_1_0.eot?#iefix') format('embedded-opentype'),url('fonts/2D247A_1_0.woff2') format('woff2'),url('fonts/2D247A_1_0.woff') format('woff'),url('fonts/2D247A_1_0.ttf') format('truetype');}
-
-
-@font-face {
-  font-family: 'DINNextLTPro-Medium';
-  src: url('fonts/2D247A_2_0.eot');
-  src: url('fonts/2D247A_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/2D247A_2_0.woff2') format('woff2'),url('fonts/2D247A_2_0.woff') format('woff'),url('fonts/2D247A_2_0.ttf') format('truetype');}
-
+ * Din Next LTO Pro light
+ */
 
 @font-face {
   font-family: 'DINNextLTPro-Light';
   src: url('fonts/2D247A_3_0.eot');
   src: url('fonts/2D247A_3_0.eot?#iefix') format('embedded-opentype'),url('fonts/2D247A_3_0.woff2') format('woff2'),url('fonts/2D247A_3_0.woff') format('woff'),url('fonts/2D247A_3_0.ttf') format('truetype');}
+}
 
+/**
+ * Corporate S Light
+ */
+
+@font-face {
+  font-family: 'CorporateS-Light';
+  src: url("fonts/c063002tWeb.eot");
+}
+
+@font-face {
+  font-family: 'CorporateS-Light';
+  src: url("fonts/c063002tWeb.woff") format("woff");
+}
+
+/**
+ * Corporate S Regular
+ */
+
+@font-face {
+  font-family: 'CorporateS-Regular';
+  src: url("fonts/c063003tWeb.eot");
+}
+
+@font-face {
+  font-family: 'CorporateS-Regular';
+  src: url("fonts/c063003tWeb.woff") format("woff");
+}
+
+/**
+ * Corporate S Demi
+ */
+
+@font-face {
+  font-family: 'CorporateS-Demi';
+  src: url("fonts/c063004tWeb.eot");
+}
+
+@font-face {
+  font-family: 'CorporateS-Demi';
+  src: url("fonts/c063004tWeb.woff") format("woff");
+}
+
+/**
+ * Corporate S Regular Italic
+ */
+
+@font-face {
+  font-family: 'CorporateS-Regular-Italic';
+  src: url("fonts/c063023tWeb.eot");
+}
+
+@font-face {
+  font-family: 'CorporateS-Regular-Italic';
+  src: url("fonts/c063023tWeb.woff") format("woff");
+}

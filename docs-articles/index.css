@@ -269,82 +269,18 @@ hr + blockquote > p{
 .docs-articles.docs-articles_learn a[title~="nav"] {
   border-radius: 2px;
   padding: 10px 14px;
-  color: var(--color-grey_lighter);
+  text-decoration: none;
+  color: var(--color-white);
   font-size: var(--fontSize_small);
   font-weight: var(--fontWeight_base);
-  text-decoration: none;
+  background-color: var(--color-skyblue_base);
   transition: all var(--duration_fastest) var(--easing_smooth);
 }
 
-.docs-articles.docs-articles_learn a[title~="basics"] {
-  box-shadow: inset 0 0 0 2px var(--color-fuchsia_base);
-  background-color: var(--color-fuchsia_base);
-}
-
-.docs-articles.docs-articles_learn a[title~="basics"]:hover {
-  color: var(--color-fuchsia_base);
-  background-color: transparent;
-}
-
-.docs-articles.docs-articles_learn a[title~="yml"] {
-  box-shadow: inset 0 0 0 2px var(--color-skyblue_base);
-  background-color: var(--color-skyblue_base);
-}
-
-.docs-articles.docs-articles_learn a[title~="yml"]:hover {
+.docs-articles.docs-articles_learn a[title~="nav"]:hover {
   color: var(--color-skyblue_base);
   background-color: transparent;
-}
-
-.docs-articles.docs-articles_learn a[title~="containers"] {
-  box-shadow: inset 0 0 0 2px var(--color-green_base);
-  background-color: var(--color-green_base);
-}
-
-.docs-articles.docs-articles_learn a[title~="containers"]:hover {
-  color: var(--color-green_base);
-  background-color: transparent;
-}
-
-.docs-articles.docs-articles_learn a[title~="pipelines"] {
-  box-shadow: inset 0 0 0 2px var(--color-pink_base);
-  background-color: var(--color-pink_base);
-}
-
-.docs-articles.docs-articles_learn a[title~="pipelines"]:hover {
-  color: var(--color-pink_base);
-  background-color: transparent;
-}
-
-.docs-articles.docs-articles_learn a[title~="steps"] {
-  box-shadow: inset 0 0 0 2px var(--color-purple_base);
-  background-color: var(--color-purple_base);
-}
-
-.docs-articles.docs-articles_learn a[title~="steps"]:hover {
-  color: var(--color-purple_base);
-  background-color: transparent;
-}
-
-.docs-articles.docs-articles_learn a[title~="build"] {
-  color: var(--color-white);
-  box-shadow: inset 0 0 0 2px var(--color-yellow_dark);
-  background-color: var(--color-yellow_dark);
-}
-
-.docs-articles.docs-articles_learn a[title~="build"]:hover {
-  color: var(--color-yellow_dark);
-  background-color: transparent;
-}
-
-.docs-articles.docs-articles_learn a[title~="deploy"] {
-  box-shadow: inset 0 0 0 2px var(--color-orange_base);
-  background-color: var(--color-orange_base);
-}
-
-.docs-articles.docs-articles_learn a[title~="deploy"]:hover {
-  color: var(--color-orange_base);
-  background-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--color-skyblue_base);
 }
 
 .docs-articles.docs-articles_learn a[title~="docs"] {

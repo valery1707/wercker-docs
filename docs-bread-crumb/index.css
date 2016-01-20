@@ -78,19 +78,6 @@
   color: var(--color-skyblue_base);
 }
 
-.bread-crumb-scroll-up span:after {
-  content: "";
-}
-
-.bread-crumb-scroll-up span:before {
-  content: "\203A";
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 10px;
-  transform: rotate(-90deg);
-  font-size: var(--fontSize_large);
-}
-
 /**
  * Responsive rules for screens starting at 768px width
  */

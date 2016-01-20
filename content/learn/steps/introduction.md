@@ -3,11 +3,8 @@
 Steps make up the wercker pipeline and can either be executed in the build or
 deploy phase within the pipeline.
 
-> steps can be used to customize your pipelines
-
 Examples of a **build step** are compilation of your code, running your
 unit tests or even static code analysis such as `jshint` or `golint`.
-
 
 A **deploy step** could be the synchronization of static assets, for
 which we've created the [s3sync

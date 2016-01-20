@@ -45,7 +45,7 @@ module.exports = react.createClass({
 
 function render () {
   const base = getWindowUrl();
-  return dom.div({className: 'flex-outer header_small header_' +  base},
+  return dom.div({className: 'flex-outer header_small header_' + base},
     dom.div({className: 'flex-inner'},
       dom.h1({children: this.props.data})
     )

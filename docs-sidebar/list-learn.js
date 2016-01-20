@@ -15,7 +15,6 @@ function learnList () {
   const lessonData = getLessonData(toc, lesson);
   const sectionClass = 'section-sidebar section-learn section-sidebar_' + lesson;
   const listChapters = createChaptersList(chapters, lesson);
-  const currentChapter = createChapter(lesson);
   const list = createList(lessonData, lesson);
 
   return dom.section({className: sectionClass},
@@ -52,19 +51,6 @@ function createList (data, lesson) {
       dom.a({href: innerUri}, innerText)
     );
   });
-}
-
-// create the element list
-// [[str]] -> obj
-function createChapter (lesson) {
-  const innerUri = createHref(stripUrl(), lesson, 'introduction');
-  const className = 'sidebar-li sidebar-li_active';
-  const innerText = stripFileName(lesson);
-
-  return dom.li({
-    key: lesson},
-    dom.a({className: className, href: innerUri}, innerText)
-  );
 }
 
 // get all chapters

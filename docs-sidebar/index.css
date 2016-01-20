@@ -186,6 +186,30 @@ body.sidebar-open {
  * Sidebar section learn.
  */
 
+.section-sidebar.section-learn {
+  border-right: 0;
+  margin-top: 10px;
+}
+
+.section-sidebar.section-learn .sidebar-li_sub_active a:before,
+.section-sidebar.section-learn .sidebar-li:before {
+  content: "";
+}
+
+.section-sidebar.section-learn .sidebar-li_sub {
+  margin: 0;
+  margin-right: 20px;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+.section-sidebar.section-learn .sidebar-li_sub_active {
+  background-color: var(--color-skyblue_base);
+}
+.section-sidebar.section-learn .sidebar-li_sub_active a {
+  color: var(--color-white);
+}
+
 .section-sidebar.section-learn .sidebar-list {
   height: calc(100vh - 115px);
   margin-top: 10px;

@@ -48,16 +48,29 @@
 
 .header {
   display: none;
-  height: 130px;
   background-color: var(--color-grey_lightest);
 }
 
 .header_small {
-  height: inherit;
+  height: 130px;
 }
 
 @media screen and (min-width: 768px) {
   .header {
     display: block;
   }
+}
+
+/**
+ * Header learn.
+ */
+
+.header_learn {
+  height: 350px;
+  background-image: linear-gradient(-25deg, var(--color-skyblue_base) -20%, var(--color-purple_light) 100%);
+}
+
+.header_learn h1 {
+  text-align: center;
+  color: var(--color-white);
 }

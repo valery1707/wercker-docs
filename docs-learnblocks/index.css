@@ -13,10 +13,9 @@
 @media screen and (min-width: 768px) {
   .learn {
     display: flex;
-    padding: 30px 0;
-    min-height: 380px;
-    background-color: var(--color-grey_lighter);
-    overflow: hidden;
+    height: 65px;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-grey_light);
   }
 }
 
@@ -44,8 +43,6 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
-  margin-top: 30px;
-  min-height: 190px;
 }
 
 /**
@@ -54,58 +51,31 @@
 
 .learnblocks-item {
   flex: 1 100%;
-  margin: 0;
-  padding-bottom: 0;
-  text-align: center;
-  transition: transform var(--duration_fastest) var(--easing-bounce_smooth);
 }
 
-.learnblocks-item.active .learnblocks-item-icon {
-  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+.learnblocks-item-title {
+  margin-left: 10px;
+  text-transform: capitalize;
+  color: var(--color-grey_darker);
+  font-size: var(--fontSize_medium);
+  line-height: var( --lineHeight_looser);
 }
 
-.learnblocks-item:hover {
-  transform: translateY(-5px);
+.learnblocks-item.active .learnblocks-item-title {
+  color: var(--color-skyblue_base);
 }
 
-.learnblocks-item.active:hover {
-  transform: translateY(-7px);
+.learnblocks-item.active .learnblocks-item-icon .icon-stroke {
+  stroke: var(--color-skyblue_base);
 }
 
-.learnblocks-item:first-child {
-  margin-left: 0;
+.learnblocks-item.active .learnblocks-item-icon .icon-fill {
+  fill: var(--color-skyblue_base);
 }
 
-.learnblocks-item_active {
-  display: none;
-  margin: 10px auto 0 auto;
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  border: 0px solid var(--color-blue_light);
-  border-width: 3px 0 0 3px;
-  transform: rotate(45deg);
-}
-
-/**
- * Responsive rules for screens starting at 961px width
- */
-
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 768px) {
   .learnblocks-item {
-    flex: 1 10%;
-    margin: 10px;
-  }
-}
-
-/**
- * Responsive rules for screens starting at 768px and max 960 width
- */
-
-@media screen and (min-width: 768px) and (max-width: 960px) {
-  .learnblocks-item {
-    flex: 1 20%;
-    margin: 0 10px 20px 0;
+    flex: 1 25%;
   }
 }
 
@@ -114,13 +84,8 @@
  */
 
 .learnblocks-item-icon {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  height: 60px;
-  padding-top: 0;
-  box-shadow: none;
-  text-align: left;
+  float: left;
+  margin-top: 5px;
   text-decoration: none;
 }
 
@@ -129,137 +94,10 @@
  */
 
 @media screen and (min-width: 768px) {
-  .learnblocks-item-icon {
-    height: 150px;
-    padding-top: 20px;
-    text-align: center;
-    box-shadow: inset 0px -35px 0px 0px rgba(0, 0, 0, 0.06);
-  }
-
   .learnblocks-item.active .learnblocks-item_active {
     display: block;
     opacity: 0;
-    animation: fade-in;
-    animation-duration: var(--duration_slowest);
-    animation-delay: var(--duration_fast);
-    animation-fill-mode: forwards;
-    animation-timing-function: var(--easing_smooth);
-  }
-}
-
-/**
- * Only show animation on class intro.
- */
-
-.intro .learnblocks-item-icon {
-  opacity: 0;
-  animation: move-in;
-  animation-duration: var(--duration_slowest);
-  animation-fill-mode: forwards;
-  animation-timing-function: var(--easing_smooth);
-}
-
-.learnblocks-item-icon img {
-  float: left;
-  width: 55px;
-}
-
-.learnblocks-item-title {
-  margin-top: 0;
-  line-height: var(--lineHeight_loosest);
-  text-transform: capitalize;
-  font-size: var(--fontSize_base);
-  color: var(--color-white);
-}
-
-@media screen and (min-width: 481px) {
-  .learnblocks-item-icon img {
-    float: none;
-    width: 86px;
-  }
-}
-
-/**
- * Setting colors and animation delay on learnblocks
- */
-
-.learnblocks-item_basics .learnblocks-item-icon {
-  background-color: var(--color-fuchsia_base);
-}
-
-.learnblocks-item_wercker_yml .learnblocks-item-icon {
-  background-color: var(--color-skyblue_base);
-  animation-delay: .04s;
-}
-
-.learnblocks-item_containers .learnblocks-item-icon {
-  background-color: var(--color-green_base);
-  animation-delay: .1s;
-}
-
-.learnblocks-item_pipelines .learnblocks-item-icon {
-  background-color: var(--color-pink_base);
-  animation-delay: .14s;
-}
-
-.learnblocks-item_steps .learnblocks-item-icon {
-  background-color: var(--color-purple_base);
-  animation-delay: .18s;
-}
-
-.learnblocks-item_build .learnblocks-item-icon {
-  background-color: var(--color-yellow_base);
-  animation-delay: .21s;
-}
-
-.learnblocks-item_deploy .learnblocks-item-icon {
-  background-color: var(--color-orange_base);
-  animation-delay: .27s;
-}
-
-/**
- * Learnblocks animations
- */
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
   }
 }
 
 
-@keyframes move-in {
-  0% {
-    transform: translateY(0px);
-    opacity: 0;
-  }
-
-  10% {
-    transform: translateY(30px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-
-  70% {
-    transform: translateY(6px);
-  }
-
-  80% {
-    transform: translateY(3px);
-  }
-
-  90% {
-    transform: translateY(1px);
-  }
-
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}

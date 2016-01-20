@@ -38,8 +38,9 @@ build:
 This will pass two options to the **npm install** step, `package` and `strict-ssl`.
 
 Apart from predefined steps there is also the notion of **custom**, or
-inline, steps
+inline, script steps.
 
+### Script steps
 Custom build steps, which are basically bash scripts defined via the 'script' clause,
 requiring **name** and **code** elements:
 

@@ -1,7 +1,7 @@
 ## Using Containers
 
 You can use Docker containers obtained from Docker Hub by specifying them
-in your [wercker.yml file](/learn/wercker-yml/introduction.html).
+in your [wercker.yml file](/learn/basics/configuration.html).
 
 ### Boxes and Services
 
@@ -10,27 +10,21 @@ of your application and is the box that runs your build pipelines.
 Service containers are spun up separately from your main language stack
 and can be leveraged for databases or queues.
 
-> Service containers are initialized separately from the main box in
-your pipelines
-
 ### Specifying versions
 
-Docker repositories can hold various versions of an image. Tags can be leveraged to specify a specific version of a container.
-
-> When using containers make sure you specify the correct tag for the
-container you want to use.
+Docker repositories can hold various versions of an image. Tags can be
+leveraged to specify a specific version of a container.
 
 You can specify a version tag in your
-[wercker.yml](/learn/wercker-yml/introduction.html) as follows:
+[wercker.yml](/learn/basics/configuration.html) as follows:
 
 ```yaml
 # using python version 2.7
 box: python:2.7
 ```
 
-As mentioned in the
-[wercker.yml](/learn/wercker-yml/introduction.html) section it is
-also possible to reference a container via an `id` clause:
+As mentioned in the [wercker.yml](/learn/basics/configuration.html) section it
+is also possible to reference a container via an `id` clause:
 
 ```yaml
 box:
@@ -61,5 +55,5 @@ services:
 Now that we know how to use containers and define them in our
 `wercker.yml`, we will have a look at how pipelines work.
 
-[&lsaquo; Docker Hub](/learn/containers/docker-hub.html "nav previous containers")
-[Pipelines &rsaquo;](/learn/pipelines/introduction.html "nav next pipelines")
+[&lsaquo; Using Containers](/learn/containers/docker-hub.html "nav previous containers")
+[Services &rsaquo;](/learn/containers/services.html "nav next containers")

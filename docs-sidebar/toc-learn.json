@@ -2,30 +2,14 @@
   [
     "basics",
     "introduction.md",
-    "how-it-works.md",
-    "the-wercker-cli.md",
-    "using-the-web-interface.md",
-    "the-desktop-app.md"
-  ],
-  [
-    "wercker-yml",
-    "introduction.md",
-    "sections.md",
-    "environment-variables.md",
-    "creating-a-yml.md"
-  ],
-  [
-    "containers",
-    "introduction.md",
-    "docker-hub.md",
-    "using-containers.md"
+    "workflow.md",
+    "configuration.md"
   ],
   [
     "pipelines",
     "introduction.md",
     "how-it-works.md",
-    "using-env-vars.md",
-    "packaging.md"
+    "available-pipelines.md"
   ],
   [
     "steps",
@@ -35,16 +19,9 @@
     "step-registry.md"
   ],
   [
-    "build",
+    "containers",
     "introduction.md",
-    "local-builds.md",
-    "pulling-builds.md",
-    "introspecting-builds.md"
-  ],
-  [
-    "deploy",
-    "introduction.md",
-    "targets.md",
-    "auto-deployment.md"
+    "using-containers.md",
+		"services.md"
   ]
 ]

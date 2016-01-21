@@ -5,7 +5,8 @@
 .start {
   height: 75vh;
   min-height: 550px;
-  background-image: linear-gradient(0deg, var(--color-blue_base) 0%, var(--color-blue_light) 100%);
+  background-color: var(--color-blue_base);
+  background-image: linear-gradient(-25deg, rgba(var(--color-skyblue_base) .2) -20%, rgba(var(--color-purple_light).2) 100%);
 }
 
 .start-header {
@@ -13,7 +14,9 @@
   text-align: center;
 }
 
-.start-header h1 {
+.start-header h2 {
+  max-width: 660px;
+  margin: 0 auto;
   color: var(--color-white);
 }
 
@@ -29,10 +32,11 @@
   margin: 0 10px;
   margin-bottom: 10px;
   padding: 20px;
-  text-align: center;
   border-radius: 2px;
   text-decoration: none;
-  border: 1px solid rgba(255,255,255, .1);
+  transform: scale(.99);
+  border: 1px solid var(--color-blue_light);
+  transition: all var(--duration_fast) var(--easing_smooth);
 }
 
 /**
@@ -41,59 +45,44 @@
 
 @media screen and (min-width: 768px) {
   .start-blocks {
-    margin: 40px 0;
+    margin-top: 60px;
+    margin-bottom: 20px;
   }
 
   .start-blocks_item {
     flex: 1 1 30%;
-    height: 14vh;
+    height: 12vh;
   }
 
   .start-blocks_item:hover {
     background-color: var(--color-blue_light);
+    transform: scale(1);
   }
 }
 
 /**
- * Start block headers
+ * Start block content
  */
 
-.start h3 {
+.start-blocks_item .flex-outer {
+  height: 100%;
+}
+
+.start-blocks_img {
+  width: 120px;
+  text-align: center;
+}
+
+.start-blocks_item h3 {
   margin: 0;
-  text-align: center;
   color: var(--color-grey_lightest);
+  font-size: var(--fontSize_large);
 }
 
-.start p {
+.start-blocks_item p {
   margin-top: 0;
-  text-align: center;
-  color: var(--color-grey_light);
+  line-height: var(--lineHeight_tight);
   font-size: var(--fontSize_base);
+  color: var(--color-grey_lighter);
 }
 
-/**
- * Start block button
- */
-
-.start .button-docs {
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 130px;
-  padding: 10px 13px;
-  border-radius: 2px;
-  text-align: center;
-  color: var(--color-grey_light);
-  background-color: transparent;
-  font-weight: var(--fontWeight_base);
-  font-size: var(--fontSize_base);
-  text-decoration: none;
-  box-shadow: inset 0 0 0 2px var(--color-grey_light);
-  letter-spacing: 1px;
-  transition: all var(--duration_fastest) var(--easing_smooth);
-}
-
-.start .button-docs:hover {
-  background-color: var(--color-grey_light);
-  color: var(--color-white);
-}

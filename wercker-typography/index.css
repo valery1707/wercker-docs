@@ -7,7 +7,7 @@
   --lineHeight_tight: 18px;
   --lineHeight_base: 26px;
   --lineHeight_loose: 38px;
-  --lineHeight_looser: 44px;
+  --lineHeight_looser: 48px;
   --lineHeight_loosest: 64px;
 }
 
@@ -79,7 +79,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'CorporateS-Demi', sans-serif;
+  font-family: 'CorporateS-Light', sans-serif;
   line-height: var(--lineHeight_looser);
   font-size: var(--fontSize_larger);
   margin-top: 30px;

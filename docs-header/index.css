@@ -13,8 +13,7 @@
   }
 
   .header_learn {
-    height: 30vh;
-    min-height: 250px;
+    height: 250px;
     align-items: center;
     background-image:
       url('/images/block-orange.svg'),

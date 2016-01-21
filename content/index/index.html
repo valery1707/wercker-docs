@@ -28,70 +28,39 @@
 
     <section class="nav-sticky"></section>
 
-    <section class="flex-outer header_small">
-      <h1>Dev Center</h1>
-    </section>
-
-
-<!--     <section class="flex-outer header_homepage">
-      <header class="flex-inner">
-        <img class="mobile-logo" src="/images/logo-full.svg">
-        <h1>Dev Center</h1>
-      </header>
-    </section>
- -->
-    <section class="flex-outer learn">
-      <div class="flex-inner">
-        <h2>Learn</h2>
-        <h4>Get up to speed with the basics of wercker</h4>
-        <div class="learn-blocks"></div>
-      </div>
-    </section>
-
     <section class="flex-outer start">
-      <div class="badge-wip"><div class="badge-wip-content">Work in progress</div></div>
       <div class="flex-inner">
+        <div class="start-header">
+          <h1>Dev Center</h1>
+        </div>
         <div class="start-blocks">
-          <div class="start-blocks_item start-blocks_learn">
-            <h2>Learn</h2>
-            <h4>Get up to speed with the basics of wercker</h4>
-            <a class="button-docs" href="/learn/basics/introduction.html">
-              Start Learning &rsaquo;
-            </a>
-          </div>
-          <div class="start-blocks_item start-blocks_quickstarts">
-            <h2>Quickstarts</h2>
-            <h4>Get started right away</h4>
-            <a class="button-docs" href="/quickstarts/index.html">
-              Start building &rsaquo;
-            </a>
-          </div>
-          <div class="start-blocks_item">
-            <h2>Docs</h2>
-            <h4>Dive into specific topics</h4>
-            <a class="button-docs" href="/docs/index.html">
-              Start reading &rsaquo;
-            </a>
-          </div>
+          <a class="start-blocks_item" href="/learn/basics/introduction.html">
+            <img src="/images/usp-container.svg">
+            <h3>Learn</h3>
+            <p>A guide to learn wercker</p>
+          </a>
+          <a class="start-blocks_item" href="/quickstarts/index.html">
+            <img src="/images/usp-stopwatch.svg">
+            <h3>Quickstarts</h3>
+            <p>Get started right away</p>
+          </a>
+          <a class="start-blocks_item" href="/docs/index.html">
+            <h3>Docs</h3>
+            <p>Dive into specific topics</p>
+          </a>
+          <a class="start-blocks_item" href="/cli/index.html">
+            <img src="/images/usp-desktop.svg">
+            <h3>CLI</h3>
+            <p>Get started with CLI</p>
+          </a>
         </div>
       </div>
-    </section>
-
-    <section class="flex-outer banner">
-      <header class="flex-inner">
-        <p>
-          <em>
-          Migrating to our Docker-based stack? Find tips
-          <a href="/docs/faq/migration-tips-v2.html">here</a>.
-          </em>
-        </p>
-      </header>
     </section>
 
     <section class="flex-outer">
       <div class="flex-inner">
         <div class="doc-cards">
-          <div class="doc-cards-item doc-cards-item_skyblue">
+          <div class="doc-cards-item">
             <h4 class="doc-cards-item_title">Languages</h4>
             <p>Quickstart guides on how to get started with a specific language</p>
             <ul>
@@ -101,7 +70,7 @@
               <li><a href="/quickstarts/building/ruby.html">Ruby</a></li>
             </ul>
           </div>
-          <div class="doc-cards-item doc-cards-item_green">
+          <div class="doc-cards-item">
             <h4 class="doc-cards-item_title">Services</h4>
             <p>Adding databases to your pipelines</p>
             <ul>
@@ -111,7 +80,7 @@
               <li><a href="/docs/services/postgresql.html">PostgreSQL</a></li>
             </ul>
           </div>
-          <div class="doc-cards-item doc-cards-item_fuchsia">
+          <div class="doc-cards-item">
             <h4 class="doc-cards-item_title">Steps</h4>
             <p>Customizing your build and deploy pipelines</p>
             <ul>
@@ -122,7 +91,7 @@
               <li><a href="/docs/steps/publishing-steps.html">Publishing a step</a></li>
             </ul>
           </div>
-          <div class="doc-cards-item doc-cards-item_red">
+          <div class="doc-cards-item">
             <h4 class="doc-cards-item_title">Deployment</h4>
             <p>Deploying applications to cloud providers</p>
             <ul>

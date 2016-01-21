@@ -12,8 +12,8 @@
 
 .docs-articles {
   min-height: 0;
-  padding: 0 20px;
-  padding-top: 70px;
+  padding: 0 30px;
+  transform: translate(0, 0);
   overflow-x: hidden;
   transform: translate(0, 0);
   transition: transform var(--duration_fast) ease-out;
@@ -37,8 +37,6 @@ body.sidebar-open .docs-articles {
 
   .docs-articles {
     flex: 1 1 80%;
-    margin-left: 40px;
-    padding-top: 20px;
     z-index: 2;
     position: relative;
   }

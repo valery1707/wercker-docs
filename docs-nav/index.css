@@ -48,7 +48,6 @@
   margin-right: 15px;
   color: var(--color-grey_light);
   font-size: var(--fontSize_small);
-  font-weight: var(--fontWeight_light);
   line-height: 4px;
   text-decoration: none;
 }
@@ -68,7 +67,7 @@
 .navbar-floating .navbar-item:hover,
 .navbar-floating .navbar-item_active,
 .navbar-floating .navbar-item_active:hover {
-  color: var(--color-grey_lightest);
+  color: var(--color-white);
 }
 
 .navbar-item_active,
@@ -85,10 +84,6 @@
 }
 
 .logo-group path {
-  fill: var(--color-blue_base);
-}
-
-.navbar-floating .logo-group path {
   fill: var(--color-white);
 }
 
@@ -100,7 +95,7 @@
   .nav-sticky {
     position: inherit;
     border-top: none;
-    min-height: 0;
+    min-height: 58px;
     background-color: var(--color-grey_lightest);
     box-shadow: none;
   }
@@ -109,7 +104,7 @@
     position: fixed;
     width: 100vw;
     padding: 10px 0;
-    background-color: transparent;
+    background-color: var(--color-blue_base);
     transition: background-color var(--duration_fast) var(--easing_smooth);
   }
 
@@ -123,17 +118,18 @@
 
   .navbar-item {
     float: left;
-    color: var(--color-blue_light);
+    color: var(--color-grey_light);
     font-size: var(--fontSize_base);
   }
 
   .navbar-item:hover {
-    color: var(--color-skyblue_base);
+    color: var(--color-white);
   }
 
   .navbar-item_active,
   .navbar-item_active:hover {
-    color: var(--color-fuchsia_base);
+    font-family: 'CorporateS-Regular', sans-serif;
+    color: var(--color-white);
   }
 
   .navbar-item_right {
@@ -186,19 +182,30 @@
 }
 
 /**
- * Learn nav
+ * Devcenter & Learn navbar
  */
 
- #learn .navbar-item {
-   color: var(--color-grey_lightest);
- }
+#devcenter .nav-sticky,
+#learn .nav-sticky {
+  min-height: 0px;
+}
 
- #learn .navbar-item:hover {
-   color: var(--color-white);
- }
+#devcenter .navbar-container,
+#learn .navbar-container {
+  background-color: transparent;
+}
 
- #learn .logo-group path {
-  fill: var(--color-white);
+#devcenter .navbar-floating .navbar-container,
+#learn .navbar-floating .navbar-container {
+  background-color: var(--color-blue_base);
+}
+
+/**
+ * Learn navbar button
+ */
+
+#learn .navbar-item {
+  color: var(--color-grey_lightest);
 }
 
 #learn .button-nav_signup {

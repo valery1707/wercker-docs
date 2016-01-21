@@ -29,8 +29,8 @@
 @media screen and (min-width: 768px) {
   .doc-cards-item {
     flex: 1 12.5%;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 20px;
   }
 }
 
@@ -41,12 +41,11 @@
 
 .doc-cards-item p {
   line-height: var(--lineHeight_base);
-  font-size: var(--fontSize_small);
-  color: var(--color-blue_light);
+  font-size: var(--fontSize_base);
 }
 
 .doc-cards-item ul {
-  margin-top: 10px;
+  margin-top: 20px;
   line-height: var(--lineHeight_looser);
   font-size: var(--fontSize_medium);
   color: var(--color-grey_base);
@@ -54,7 +53,6 @@
 }
 
 .doc-cards-item ul .doc-cards-item_list-header {
-  font-weight: var(--fontWeight_semibold);
   padding-bottom: 10px;
 }
 
@@ -71,24 +69,4 @@
   font-size: var(--fontSize_medium);
   color: var(--color-blue_base);
   text-decoration: none;
-}
-
-.doc-cards-item .doc-cards-item_title {
-  border-bottom: 1px solid var(--color-blue_light);
-}
-
-.doc-cards-item_skyblue .doc-cards-item_title {
-  border-color: var(--color-skyblue_base);
-}
-
-.doc-cards-item_green .doc-cards-item_title {
-  border-color: var(--color-green_base);
-}
-
-.doc-cards-item_fuchsia .doc-cards-item_title {
-  border-color: var(--color-fuchsia_base);
-}
-
-.doc-cards-item_red .doc-cards-item_title {
-  border-color: var(--color-pink_base);
 }

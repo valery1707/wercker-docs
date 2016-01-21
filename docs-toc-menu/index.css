@@ -16,6 +16,9 @@
   margin-left: 20px;
 }
 
+.toc-menu-logo .logo-group path {
+  fill: var(--color-blue_base);
+}
 /**
  * TOC menu button
  */

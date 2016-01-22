@@ -21,13 +21,24 @@
       url('/images/block-purple.svg'),
       url('/images/block-blue.svg'),
       linear-gradient(-25deg, var(--color-skyblue_base) -20%, var(--color-purple_light) 100%);
-    background-position: 2vw 12vh, 16vw 2vh,  70vw 5vh, 85vw 10vh, right;
+    background-position: 2vw 9vh, 16vw 3vh,  70vw 7vh, 85vw 12vh, right;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: 160px, 90px, 170px, 300px, 100%;
+
+    animation: header-intro;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: var(--easing-bounce_smooth);
   }
 
   .header_learn h1 {
     color: var(--color-white);
     text-align: center;
+  }
+}
+
+@keyframes header-intro {
+  to {
+    background-position: 2vw 12vh, 16vw 4vh,  70vw 5vh, 85vw 10vh, right;
   }
 }

@@ -190,6 +190,7 @@
 #devcenter .nav-sticky,
 #learn .nav-sticky {
   min-height: 0px;
+  height: 0px;
 }
 
 #devcenter .navbar-container,

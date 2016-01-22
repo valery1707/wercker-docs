@@ -14,6 +14,7 @@
 .toc-menu-logo {
   float: left;
   margin-left: 20px;
+  fill: var(--color-skyblue_base);
 }
 
 /**

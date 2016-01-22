@@ -52,11 +52,7 @@ body.sidebar-open {
   }
 
   .section-sidebar {
-<<<<<<< 51f39d6f4201aba330e830d4a2836ec7a2e5915f
-    padding-left: 10px;
-=======
     padding: 0;
->>>>>>> improving styling
     padding-right: 20px;
   }
 }

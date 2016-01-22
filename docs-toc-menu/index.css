@@ -14,9 +14,11 @@
 .toc-menu-logo {
   float: left;
   margin-left: 20px;
-  fill: var(--color-skyblue_base);
 }
 
+.toc-menu-logo .logo-group path {
+  fill: var(--color-blue_base);
+}
 /**
  * TOC menu button
  */

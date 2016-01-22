@@ -214,4 +214,8 @@ body.sidebar-open {
   .sidebar-list_chapters {
     display: none;
   }
+
+  .section-sidebar.section-learn .sidebar-li {
+    display: none;
+  }
 }

@@ -12,7 +12,7 @@
 
 .api-articles {
   min-height: 0;
-  padding: 0 30px;
+  padding: 0 20px;
   transform: translate(0, 0);
   overflow-x: hidden;
   transition: transform var(--duration_fast) ease-out;
@@ -35,9 +35,9 @@ body.sidebar-open .api-articles {
   }
 
   .api-articles {
-    flex: 1 1 75%;
-    order: 2;
     z-index: 2;
+    flex: 1 1 75%;
+    padding: 0 30px;
     position: relative;
   }
 }

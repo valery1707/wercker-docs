@@ -63,9 +63,6 @@
   .learnblocks-item {
     padding: 5px 25px;
   }
-  .learnblocks-item.active {
-    border-bottom: 2px solid var(--color-skyblue_base);
-  }
 }
 
 /**

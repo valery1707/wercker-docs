@@ -199,7 +199,7 @@ body.sidebar-open {
 
 .section-sidebar.section-learn .sidebar-li_sub a {
   font-family: 'CorporateS-Light';
-  font-size: var(--fontSize_base);
+  font-size: var(--fontSize_small);
   line-height: var(--lineHeight_base);
   text-decoration: none;
 }

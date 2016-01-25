@@ -52,10 +52,10 @@ quickstartLinkJavascript.onclick = trackCorporateClick;
 quickstartLinkRuby.onclick = trackCorporateClick;
 quickstartLinkPython.onclick = trackCorporateClick;
 
-
 /**
  * Sign up clicks on sub pages
  */
+
 function trackSignupClick (e) {
   var buttonId = e.currentTarget.getAttribute('id');
   var pageId = document.querySelector('body').getAttribute('id');

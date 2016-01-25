@@ -1,3 +1,4 @@
+
 // init keen
 window.client = new window.Keen({
   projectId: '54d09b5359949a5f26b75fa4',
@@ -5,36 +6,58 @@ window.client = new window.Keen({
   readKey: 'anything' // not used; not needed for data collection
 });
 
-// init Google analytics
-// var _gaq = _gaq || [];
-// _gaq.push(['_setAccount', 'UA-28568056-1']);
-// _gaq.push(['_setDomainName', 'devcenter.wercker.com']);
-// _gaq.push(['_trackPageview']);
-
-// var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-// ga.src = (document.location.protocol === 'https:' ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-// var s = document.getElementsByTagName('script')[0];
-// s.parentNode.insertBefore(ga, s);
-
 /**
- * Setup buttons and links
- */
+ * Setup buttons  */
+
 var signupNavSub = document.querySelector('#signup-nav-sub');
-var signupFooterSub = document.querySelector('#signup-footer-sub');
-var newsletterJoin = document.querySelector('#newsletter-join');
+var signupFooter = document.querySelector('#signup-footer');
+var signupFooterGh = document.querySelector('#signup-footer-gh');
+
+signupNavSub.onclick = trackSignupClick;
+signupFooter.onclick = trackSignupClick;
+signupFooterGh.onclick = trackSignupClick;
 
 /**
- * Setup event listeners
+ * Newsletter
  */
-signupNavSub.onclick = trackSignupClick;
-signupFooterSub.onclick = trackSignupClick;
+
+var newsletterJoin = document.querySelector('#newsletter-join');
 newsletterJoin.onclick = trackCorporateClick;
+
+/**
+ * Start homepage
+ */
+
+var startLearn = document.querySelector('#start-learn');
+var startQuickstarts = document.querySelector('#start-quickstarts');
+var startDocs = document.querySelector('#start-docs');
+var startCli = document.querySelector('#start-cli');
+
+startLearn.onclick = trackCorporateClick;
+startQuickstarts.onclick = trackCorporateClick;
+startDocs.onclick = trackCorporateClick;
+startCli.onclick = trackCorporateClick;
+
+/**
+ * Quickstarts language links
+ */
+
+var quickstartLinkGolang = document.querySelector('#quickstart-link-golang');
+var quickstartLinkJavascript = document.querySelector('#quickstart-link-javascript');
+var quickstartLinkRuby = document.querySelector('#quickstart-link-ruby');
+var quickstartLinkPython = document.querySelector('#quickstart-link-python');
+
+quickstartLinkGolang.onclick = trackCorporateClick;
+quickstartLinkJavascript.onclick = trackCorporateClick;
+quickstartLinkRuby.onclick = trackCorporateClick;
+quickstartLinkPython.onclick = trackCorporateClick;
+
 
 /**
  * Sign up clicks on sub pages
  */
 function trackSignupClick (e) {
-  var buttonId = e.target.getAttribute('id');
+  var buttonId = e.currentTarget.getAttribute('id');
   var pageId = document.querySelector('body').getAttribute('id');
   return window.client.trackExternalLink(e, 'signup_click', {id: buttonId, page: pageId});
 }
@@ -43,7 +66,8 @@ function trackSignupClick (e) {
  * External link clicks
  */
 function trackCorporateClick (e) {
-  var buttonId = e.target.getAttribute('id');
+  var buttonId = e.currentTarget.getAttribute('id');
   var pageId = document.querySelector('body').getAttribute('id');
+  console.log(buttonId, pageId);
   return window.client.trackExternalLink(e, 'corporate_click', {id: buttonId, page: pageId});
 }

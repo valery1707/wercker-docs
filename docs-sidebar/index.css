@@ -193,8 +193,14 @@ body.sidebar-open {
   border-radius: 2px;
 }
 
+.section-sidebar.section-learn .sidebar-li_sub:before {
+  content: " ";
+}
+
 .section-sidebar.section-learn .sidebar-li_sub a {
   font-family: 'CorporateS-Light';
+  font-size: var(--fontSize_base);
+  line-height: var(--lineHeight_base);
   text-decoration: none;
 }
 

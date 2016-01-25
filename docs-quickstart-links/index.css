@@ -16,14 +16,49 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
-  padding: 0 10px;
+  margin: 40px auto;
+  max-width: 800px;
 }
 
 .quickstart-links-item {
-  flex: 1 100%;
-  padding: 0 10px;
+  flex: 1 1 50%;
   text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.quickstart-logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.quickstart-links-item:hover .quickstart-logo img {
+  transform: translateY(0);
+}
+.quickstart-links-item:hover .quickstart-logo img +img {
+  transform: translateY(-204px);
+}
+
+.quickstart-logo img {
+  transform: translateY(50px);
+  transition: transform var(--duration_base) var(--easing-bounce_smooth);
+}
+
+.quickstart-logo img + img {
+  transform: translateY(-104px);
+  transition: transform var(--duration_base) var(--easing-bounce_smooth);
+}
+
+.quickstart-links-item h5 {
+  margin-top: 10px;
 }
 
 /**
@@ -32,13 +67,15 @@
 
 @media screen and (min-width: 768px) {
   .quickstart-links {
-    margin: 60px 0;
+    margin-top: 60px;
     padding: 0;
   }
 
+  .quickstart-links-holder {
+  }
+
   .quickstart-links-item {
-    flex: 1 12.5%;
-    margin: 10px;
-    padding: 20px 0;
+    flex: 1 1 25%;
+    margin-bottom: 0;
   }
 }

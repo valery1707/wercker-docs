@@ -48,6 +48,7 @@ p, a, h2, h3, h4, h5 {
   font-family: 'CorporateS-Light', sans-serif;
   font-size: var(--fontSize_base);
   color: var(--color-grey_darker);
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 a {

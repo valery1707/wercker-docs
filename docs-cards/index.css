@@ -79,3 +79,20 @@
   color: var(--color-blue_base);
   text-decoration: none;
 }
+
+
+@media screen and (min-width: 768px) {
+  .header-signup {
+    display: inline-block;
+  }
+
+  .button-header_signup {
+    display: inline-block;
+    width: 220px;
+  }
+
+  .button-header_signup.github {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}

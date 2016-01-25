@@ -1,4 +1,14 @@
 /**
+ * Din Next LTO Pro medium
+ */
+
+@font-face {
+  font-family: 'DINNextLTPro-Medium';
+  src: url('fonts/2D247A_2_0.eot');
+  src: url('fonts/2D247A_2_0.eot?#iefix') format('embedded-opentype'),url('fonts/2D247A_2_0.woff2') format('woff2'),url('fonts/2D247A_2_0.woff') format('woff'),url('fonts/2D247A_2_0.ttf') format('truetype');
+}
+
+/**
  * Din Next LTO Pro light
  */
 

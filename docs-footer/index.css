@@ -4,80 +4,70 @@
 
 .footer {
   background-color: var(--color-blue_base);
+  background-image: linear-gradient(1deg, rgba(215, 160, 245, 0.2), rgba(146, 217, 244, 0.2) 100%);
+  z-index: 70;
 }
 
 .footer-content {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-.footer-logo {
-  flex: 1 50%;
-  margin-top: 55px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--color-blue_light);
+.footer-content_item {
+  flex: 1 33%;
 }
 
-.footer-logo-payoff {
-  margin: 3px 0 0 0;
-  color: var(--color-grey_light);
+.footer-content_item h4 {
+  display: inline-block;
+  margin: 0;
+  margin-left: 40px;
+  padding-bottom: 10px;
+  color: var(--color-grey_lighter);
+  /*font-family: 'CorporateS-Regular', sans-serif;*/
+  border-bottom: 2px solid var(--color-blue_base);
 }
 
-.footer-signup {
-  flex: 1 50%;
-  margin-top: 60px;
-  padding-bottom: 20px;
-  line-height: 60px;
-  border-bottom: 1px solid var(--color-blue_light);
-  text-align: right;
+.footer-content_item ul {
+  margin-left: 40px;
+  padding: 0;
+  list-style: none;
 }
 
-.footer-social {
-  flex: 1 100%;
-  margin-top: 30px;
-  color: var(--color-white);
-}
-
-.footer-social span {
-  color: var(--color-grey_light);
-  font-size: var(--fontSize_base);
-  font-weight: var(--fontWeight_light);
-}
-
-.footer-social-icon {
+.footer-content_item a {
   text-decoration: none;
-  margin-left: 10px;
-  opacity: .75;
-}
-
-.footer-social-icon:hover {
-  opacity: 1;
-}
-
-.footer-newsletter {
-  display: inline;
-  float: right;
-  color: var(--color-grey_light);
   font-size: var(--fontSize_base);
-  font-weight: var(--fontWeight_light);
-  text-decoration: underline;
+  color: var(--color-grey_light);
+  line-height: var(--lineHeight_base);
 }
 
-.footer-newsletter:hover {
+.footer-content_item a:hover {
   color: var(--color-white);
+}
+
+.footer-content_item a span {
+  margin-left: 10px;
+}
+
+.footer-content_item a img {
+  vertical-align: text-bottom;
+  float: left;
 }
 
 .footer-links {
   display: flex;
   justify-content: center;
-  height: 100px;
   margin-top: 60px;
   padding-bottom: 20px;
 }
 
 .footer-links ul {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -102,61 +92,93 @@
   color: var(--color-white);
 }
 
-/**
- * Footer button.
- */
-
-.button-footer_signup {
-  padding: 12px 15px;
-  border-radius: 2px;
-  background-color: var(--color-green_base);
-  color: var(--color-grey_lighter);
-  font-weight: var(--fontWeight_base);
-  font-size: var(--fontSize_base);
-  text-decoration: none;
-  letter-spacing: 1px;
-  box-shadow: inset 0 0 0 2px var(--color-green_base);
-  transition: all var(--duration_fastest) var(--easing_smooth);
-}
-
-.button-footer_signup:hover {
-  color: var(--color-green_base);
-  background-color: transparent;
-}
-
 @media screen and (max-width: 768px) {
-  .footer-logo {
-    flex: 1 100%;
-    margin-top: 60px;
-    padding-bottom: 20px;
-    border-bottom: none;
-    text-align: center;
-  }
 
-  .footer-signup {
-    flex: 100%;
-    margin-top: 0px;
-    padding-bottom: 20px;
-    line-height: 60px;
-    border-bottom: none;
-    text-align: center;
-  }
-
-  .footer-social {
-    padding-top: 30px;
-    text-align: center;
-    border-top: 1px solid var(--color-blue_light);
-    border-bottom: 1px solid var(--color-blue_light);
-    line-height: var(--lineHeight_looser);
-  }
-
-  .footer-newsletter {
-    display: block;
-    padding-bottom: 40px;
-    float: none;
+  .footer-content_item {
+    flex: 1 50%;
+    margin-bottom: 20px;
   }
 
   .footer-links {
     margin-top: 20px;
   }
 }
+
+
+/**
+ * Signup.
+ */
+
+.signup-content {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.signup-content .header-text h1 {
+  margin-bottom: 20px;
+  font-family: 'DINNextLTPro-medium';
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 60px;
+}
+
+.header-signup {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.button-footer_signup {
+  display: block;
+  width: auto;
+  padding: 18px 24px;
+  border-radius: 2px;
+  background-color: var(--color-green_base);
+  color: var(--color-grey_lightest);
+  font-weight: var(--fontWeight_semibold);
+  font-size: var(--fontSize_base);
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 44px 0 rgba(36, 41, 50, 0.2);
+  transition: all var(--duration_fastest) var(--easing_smooth);
+}
+
+.button-footer_signup.github {
+  margin-top: 10px;
+  background-color: var(--color-blue_base);
+  color: var(--color-white);
+  box-shadow: 0 6px 44px 0 rgba(36, 41, 50, 0.2);
+}
+
+.button-footer_signup.github svg {
+  vertical-align: top;
+  float: left;
+}
+
+.button-footer_signup #icon-github_fill {
+  transition: all var(--duration_fastest) var(--easing_smooth);
+}
+
+.button-footer_signup:hover {
+  color: var(--color-white);
+  box-shadow: inset 0 0 0 2px var(--color-white);
+  background-color: transparent;
+}
+
+.button-footer_signup:hover #icon-github_fill {
+  fill: var(--color-white);
+}
+
+@media screen and (min-width: 768px) {
+  .button-footer_signup {
+    display: inline-block;
+    width: 220px;
+  }
+
+  .button-footer_signup.github {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}
+

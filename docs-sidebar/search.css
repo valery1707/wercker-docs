@@ -18,7 +18,7 @@
 .search-input {
   border: hidden;
   color: var(--color-blue_base);
-  font-size: var(--fontSize_base);
+  font-size: var(--fontSize_small);
   font-family: 'Open Sans', sans-serif;
 }
 

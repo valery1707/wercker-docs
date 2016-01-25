@@ -21,7 +21,7 @@
 }
 
 .start-header img {
-  display: none;
+  display: inline;
 }
 
 .start-blocks {
@@ -29,6 +29,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+  margin-bottom: 40px;
 }
 
 .start-blocks_item {
@@ -54,8 +55,7 @@
   }
 
   .start-blocks {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .start-header {

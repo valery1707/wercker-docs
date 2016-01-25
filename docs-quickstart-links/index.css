@@ -1,0 +1,44 @@
+/**
+ * Doc quickstart links.
+ */
+
+.quickstart-links {
+  margin-top: 60px;
+}
+
+.quickstart-links h3 {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.quickstart-links-holder {
+  align-content: space-around;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 0 10px;
+}
+
+.quickstart-links-item {
+  flex: 1 100%;
+  padding: 0 10px;
+  text-align: center;
+}
+
+/**
+ * Responsive rules for screens starting at 768px width
+ */
+
+@media screen and (min-width: 768px) {
+  .quickstart-links {
+    margin: 60px 0;
+    padding: 0;
+  }
+
+  .quickstart-links-item {
+    flex: 1 12.5%;
+    margin: 10px;
+    padding: 20px 0;
+  }
+}

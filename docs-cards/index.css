@@ -23,7 +23,7 @@
 .doc-cards-item {
   flex: 1 100%;
   margin: 10px 0;
-  padding: 20px;
+  padding: 25px 20px;
   border: 1px solid var(--color-grey_lighter);
 }
 
@@ -38,7 +38,7 @@
 @media screen and (min-width: 768px) {
   .doc-cards-item {
     flex: 1 12.5%;
-    margin: 5px;
+    margin: 0 5px;
     padding: 20px;
   }
 }

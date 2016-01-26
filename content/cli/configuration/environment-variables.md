@@ -18,9 +18,11 @@ export X_TOKEN="secret"
 wercker build
 ```
 
-It is also possible to create a file that contains multiple environment
-variables. You can specify the file to be used by adding the `--environment`
-flag while running `wercker build` command:
+It is also possible to create an `ENVIRONMENT` file that contains multiple
+environment variables. Wercker will then automatically synchronize the
+variables defined in this file with your containers.  If you want to use
+multiple environment files, you can specify the file to be used by adding the
+`--environment` flag while running `wercker build` command:
 
 ```no-highlight
 wercker --environment wercker.env build

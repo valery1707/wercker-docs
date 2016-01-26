@@ -2,7 +2,7 @@
  * Doc quickstart links.
  */
 
-.quickstart-links {
+#devcenter .quickstart-links {
   margin-top: 60px;
 }
 
@@ -67,11 +67,7 @@
 
 @media screen and (min-width: 768px) {
   .quickstart-links {
-    margin-top: 60px;
     padding: 0;
-  }
-
-  .quickstart-links-holder {
   }
 
   .quickstart-links-item {

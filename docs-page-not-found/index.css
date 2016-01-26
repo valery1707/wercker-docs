@@ -3,9 +3,9 @@
  */
 
 .page-not-found {
-  height: 50vh;
+  height: 40vh;
   min-height: 400px;
-  background-color: var(--color-grey_lighter);
+  background-color: var(--color-white);
 }
 
 .page-not-found-content,

@@ -5,10 +5,10 @@ tags: steps, registry
 ## Creating steps
 
 If you cannot find a step which solves your particular "problem" in the
-[step registry](/learn/steps/step-registry.html), then you can create
-your own step and publish it. Steps are similar to any other projects on
-wercker but instead of deploying to a cloud provider, you deploy to the
-step registry in order to make the step available.
+[step registry](https://app.wercker.com/#explore/steps/search/), then you can
+create your own step and publish it. Steps are similar to any other projects on
+wercker but instead of deploying to a cloud provider, you deploy to the step
+registry in order to make the step available.
 
 To be able to publish a step, you first need a wercker application containing
 the following files:

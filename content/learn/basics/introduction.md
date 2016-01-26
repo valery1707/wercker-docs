@@ -2,7 +2,7 @@
 
 Wercker is a [Docker](http://docker.com/)-based platform for developing,
 building and delivering your applications in the modern world of microservices,
-containers and cloud.
+containers and the cloud.
 
 Wercker provides you with a toolchain and cloud platform to speed up your
 development process. It allows you to build apps for the 21st century by
@@ -31,8 +31,9 @@ your choosing.
 
 Under the hood wercker leverages Docker containers to not only allow automated
 pipelines, but also isolated environments to run code in. Wercker runs your
-code in a container and takes it through what we call [steps](http://devcenter.wercker.com/docs/steps/index.html) and saves the output as a
-container.
+code in a container, takes it through what we call
+[steps](http://devcenter.wercker.com/docs/steps/index.html) and saves the
+output as a container.
 
 Wercker also works for developers working on websites, blogs or apps that are
 not necessarily as complex. Because wercker is also a workflow and not only a

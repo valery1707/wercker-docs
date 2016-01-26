@@ -7,7 +7,7 @@ own custom API server.
 When using services, wercker makes sure that the containers are able to
 communicate with each other. Basic service discovery is also implemented
 through DNS, which is standard behaviour from Docker. Docker will also inject
-several environment variables in the main container that contain useful
+several environment variables in the main container that are useful.
 
 You can read more about linking containers
 [here](/docs/services/linking-services.html).

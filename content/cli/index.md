@@ -1,7 +1,7 @@
 ## The Wercker Command Line Interface
 
 The wercker command line interface (CLI) is a separate
-[download](http://wercker.com/cli) and
+[download](http://wercker.com/downloads/) and
 allows you to develop, build and debug your applications locally.
 
 It is available through the `wercker` command and running it will show the

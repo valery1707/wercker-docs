@@ -1,4 +1,4 @@
-## Overview
+## Docs
 
 Welcome to the wercker documentation! The *docs* section covers all the wercker
 concepts and common tasks. If you are completely new to wercker, it's

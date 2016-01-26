@@ -15,9 +15,9 @@ automating your development environment. You can specify
 which you need to run your app. Services can be Databases, Messaging queues, or
 even your own specific API that you have hosted on Dockerhub. 
 
-Developing inside containers, and letting wercker automate that process, is
+Developing inside containers and letting wercker automate that process, is
 extremely useful because it allows you to execute your applications as they
-would run inside production (in a container!). That means that you get real
+would run on production (in a container!). That means that you get real
 close to dev/prod parity. 
 
 ---
@@ -38,7 +38,7 @@ dev:
 ```
 
 - - -
-> Want to learn more? Read more about developing locally on the
+> Want to learn more? Read more about developing locally in the
 > [docs](/cli/usage/index.html)
 
 ### Build
@@ -46,7 +46,7 @@ dev:
 The goal of the build pipeline is to get your application ready for deployment.
 This could mean compiling your app, running tests, linting and running
 integration tests with other services. While the build pipeline also produces a
-container, it’s useful to extract only the artefacts that you need for your the
+container, it’s useful to extract only the artifacts that you need for the
 actual deployment of your application by copying them to the
 `$WERCKER_OUTPUT_DIR`.
 
@@ -73,12 +73,12 @@ that in this case compiles our static site.
 
 Running a deploy happens in a fresh container and works the same as a build
 pipeline. The only difference is that a deploy pipeline has access to the
-results of a build pipeline, so that it can copy the needed artefacts produced
+results of a build pipeline, so that it can copy the needed artifact produced
 by the build into this new deploy container. 
 
 This container can then contain additional steps to either push the container
-as-is to a registry (e.g. Docker Hub) and / or execute an API call to a
-scheduler (such as [Kubernetes](/quickstarts/deployment/kubernetes.html)or
+as-is to a registry (e.g. Docker Hub) and/or execute an API call to a
+scheduler (such as [Kubernetes](/quickstarts/deployment/kubernetes.html) or
 [Mesosphere](/quickstarts/deployment/mesosphere.html)) to notify that there is a
 new version of a container image ready to be scheduled.
 

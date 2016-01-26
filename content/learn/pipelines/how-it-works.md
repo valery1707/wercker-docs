@@ -18,8 +18,8 @@ pulls it in from the [Docker Hub](http://dockerhub.com), after which the
 [steps](/learn/steps/introduction.html) as defined in your `wercker.yml` are
 executed.
 
-Any [service](/learn/containers/services.html) container that was
-specified as well will be spun up as a *separate container* and available
+Any [service](/learn/containers/services.html) container that was also
+specified will be spun up as a *separate container* and be available
 during the build pipeline. Communication with service containers is done
 through [environment variables](/learn/containers/using-containers.html).
 
@@ -28,7 +28,7 @@ through [environment variables](/learn/containers/using-containers.html).
 The starting point for a *deploy pipeline* is the artifact that was
 created during the build pipeline.
 
-Within pipelines [environment variables](/learn/basics/configuration.html)
+Within pipelines, [environment variables](/learn/basics/configuration.html)
 can be used for tokens, passwords and other configuration information that
 might be needed during the lifetime and execution of a pipeline.
 

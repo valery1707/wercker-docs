@@ -186,6 +186,10 @@ body.sidebar-open {
   border-right: 0;
 }
 
+.section-sidebar.section-learn .sidebar-list > ul {
+  border: none;
+}
+
 .section-sidebar.section-learn .sidebar-li_sub {
   margin: 0;
   margin-bottom: 6px;
@@ -199,7 +203,7 @@ body.sidebar-open {
 
 .section-sidebar.section-learn .sidebar-li_sub a {
   font-family: 'CorporateS-Light';
-  font-size: var(--fontSize_small);
+  font-size: var(--fontSize_base);
   line-height: var(--lineHeight_base);
   text-decoration: none;
 }

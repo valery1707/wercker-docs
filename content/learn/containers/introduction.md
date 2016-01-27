@@ -13,7 +13,7 @@ containers.
 
 This means that you can ship and deploy these containers to your servers.
 
-![image](/images/portable-container.png)
+![image](/images/portable-container.svg)
 
 Within pipelines, containers are used to run your language stack (for
 instance python) but also services such as a database.

@@ -10,7 +10,7 @@ infrastructure such that it can be used in deploy pipelines. The
 artifact is stored both as a *container* and a *tarball* of just the source
 files.
 
-![image](/images/pipeline-build.png)
+![image](/images/pipeline-build.svg)
 
 When a build pipeline starts it uses the *box* section in your
 [wercker.yml](/learn/basics/configuration.html) file as a base container and
@@ -23,7 +23,7 @@ specified will be spun up as a *separate container* and be available
 during the build pipeline. Communication with service containers is done
 through [environment variables](/learn/containers/using-containers.html).
 
-![image](/images/pipeline-service.png)
+![image](/images/pipeline-service.svg)
 
 The starting point for a *deploy pipeline* is the artifact that was
 created during the build pipeline.

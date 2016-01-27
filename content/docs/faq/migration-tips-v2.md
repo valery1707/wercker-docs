@@ -34,7 +34,7 @@ with the Docker-based stack! (see the next point)
 
 The classic `boxes` system no longer works in wercker v2. Instead, you
 can now use Docker containers in your
-[wercker.yml](/learn/wercker-yml/sections.html).
+[wercker.yml](/learn/basics/configuration.html).
 
 In the example below the official [Ruby
 container](https://registry.hub.docker.com/u/library/ruby/) from the

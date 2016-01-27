@@ -22,7 +22,7 @@ The Docker Hub has a
 [container](https://registry.hub.docker.com/_/python/) which has by default a 3.4.x version of python installed, through tags you can select specific versions of Python/containers (for example: python:2-slim).
 
 Define your selected container in your [wercker.yml
-file](/learn/wercker-yml/introduction.html) using the `box` clause.
+file](/learn/basics/configuration.html) using the `box` clause.
 
 ```yaml
 box: python

@@ -3,7 +3,7 @@
 Wercker consists of two tightly integrated interfaces: the web interface and
 the CLI.
 
-![image](/images/local-dev-cloud.png)
+![image](/images/local-dev-cloud.svg)
 
 ### Web interface
 
@@ -12,13 +12,14 @@ together with the rest of your team. It's also the place where you can trigger b
 deploys. If a build goes wrong, you can check out why it went wrong here.
 Furthermore you can set any environment variables that are needed for your
 pipelines to execute correctly and invite other people to collaborate on your
-project. 
+project.
+
+![image](/images/app-interface.svg)
 
 Preferably you won’t spend too much time here, because if you setup everything
 correctly all your builds and deploys will be triggered automatically and you
 won’t have to look back.
 
-![image](/images/build-deploy.png)
 
 ### CLI
 

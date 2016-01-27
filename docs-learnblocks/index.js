@@ -7,16 +7,16 @@ var fs = require('fs');
 const dom = react.DOM;
 const blocks = [
   'basics',
-  'containers',
   'pipelines',
-  'steps'
+  'steps',
+  'containers'
 ];
 
 var icons = {
   basics: fs.readFileSync(__dirname + '/icon-basics.svg', 'utf8'),
-  containers: fs.readFileSync(__dirname + '/icon-containers.svg', 'utf8'),
   pipelines: fs.readFileSync(__dirname + '/icon-pipelines.svg', 'utf8'),
-  steps: fs.readFileSync(__dirname + '/icon-steps.svg', 'utf8')
+  steps: fs.readFileSync(__dirname + '/icon-steps.svg', 'utf8'),
+  containers: fs.readFileSync(__dirname + '/icon-containers.svg', 'utf8')
 };
 
 /**

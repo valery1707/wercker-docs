@@ -188,7 +188,6 @@ body.sidebar-open .api-articles {
 .api-articles p > img {
   max-width: 100%;
   margin-top: 20px;
-  border: 1px solid var(--color-grey_lighter);
 }
 
 @media screen and (min-width: 768px) {

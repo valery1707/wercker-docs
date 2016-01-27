@@ -27,7 +27,7 @@ to specify a specific version of a container.
 container you want to use.
 
 You can specify a version tag in your
-[wercker.yml](/learn/wercker-yml/introduction.html) as follows.
+[wercker.yml](/learn/basics/configuration.html) as follows.
 
 ```yaml
 # using python version 2.7

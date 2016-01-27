@@ -25,7 +25,7 @@ as well. If you want to cross compile using
 [tcnksm](https://registry.hub.docker.com/u/tcnksm/gox/).
 
 Define your selected container in your [wercker.yml
-file](/learn/wercker-yml/introduction.html) using the `box` clause.
+file](/learn/basics/configuration.html) using the `box` clause.
 
 ```yaml
 box: google/golang

@@ -55,5 +55,5 @@ services:
 Now that we know how to use containers and define them in our
 `wercker.yml`, we will have a look at how pipelines work.
 
-[&lsaquo; Using Containers](/learn/containers/docker-hub.html "nav previous containers")
+[&lsaquo; Introduction](/learn/containers/introduction.html "nav previous containers")
 [Services &rsaquo;](/learn/containers/services.html "nav next containers")

@@ -6,7 +6,7 @@ series of steps, and produce a container.
 The steps used change according to the type of pipeline. Right now, wercker
 distinguishes between three pipelines: **dev**, **build** and **deploy**.
 
-### Dev
+### <a name="dev" class="anchor"></a>Dev
 
 The goal of the development pipeline is to allow you to develop your
 application locally inside of containers, while wercker takes care of
@@ -41,7 +41,7 @@ dev:
 > Want to learn more? Read more about developing locally in the
 > [docs](/cli/usage/index.html)
 
-### Build
+### <a name="build" class="anchor"></a>Build
 
 The goal of the build pipeline is to get your application ready for deployment.
 This could mean compiling your app, running tests, linting and running
@@ -69,7 +69,7 @@ This step is available from the [step
 registry](/learn/steps/step-registry.html). The second step in an inline script
 that in this case compiles our static site.
 
-### Deploy
+### <a name="deploy" class="anchor"></a>Deploy
 
 Running a deploy happens in a fresh container and works the same as a build
 pipeline. The only difference is that a deploy pipeline has access to the

@@ -108,6 +108,7 @@
 
 .start-blocks_item p {
   margin-top: 0;
+  width: 200px;
   line-height: var(--lineHeight_tight);
   font-size: var(--fontSize_base);
   color: var(--color-grey_lighter);

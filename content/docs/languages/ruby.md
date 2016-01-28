@@ -21,7 +21,7 @@ There is a default container that you can find [here](https://registry.hub.docke
 we will be using the [phusion passenger container](https://registry.hub.docker.com/u/phusion/passenger-ruby22/) that comes with ruby 2.2.
 
 Define your selected container in your [wercker.yml
-file](/learn/wercker-yml/introduction.html) using the `box` clause.
+file](/learn/basics/configuration.html) using the `box` clause.
 
 ```yaml
 box: phusion/passenger-ruby22

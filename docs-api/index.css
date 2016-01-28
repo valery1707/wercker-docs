@@ -7,15 +7,15 @@
 }
 
 .flex-outer.api-content {
-  margin-top: 0;
+  margin-top: 70px;
 }
 
 .api-articles {
+  min-height: 0;
   padding: 0 20px;
-  padding-top: 70px;
-  overflow-x: hidden;
   transform: translate(0, 0);
-  transition: transform var(--duration_base) ease-out;
+  overflow-x: hidden;
+  transition: transform var(--duration_fast) ease-out;
 }
 
 /**
@@ -31,15 +31,13 @@ body.sidebar-open .api-articles {
 @media screen and (min-width: 768px) {
   .flex-outer.api-content {
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .api-articles {
-    flex: 3 3 75%;
-    order: 2;
-    padding: 30px;
-    padding-top: 20px;
     z-index: 2;
+    flex: 1 1 75%;
+    padding: 0 30px;
     position: relative;
   }
 }
@@ -190,7 +188,6 @@ body.sidebar-open .api-articles {
 .api-articles p > img {
   max-width: 100%;
   margin-top: 20px;
-  border: 1px solid var(--color-grey_lighter);
 }
 
 @media screen and (min-width: 768px) {

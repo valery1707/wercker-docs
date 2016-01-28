@@ -13,7 +13,7 @@ containers.
 
 This means that you can ship and deploy these containers to your servers.
 
-![image](/images/portable-container.png)
+![image](/images/portable-container.svg)
 
 Within pipelines, containers are used to run your language stack (for
 instance python) but also services such as a database.
@@ -23,4 +23,4 @@ instance python) but also services such as a database.
 In the next couple of sections we will explain where to get your
 containers from, and how to use them.
 
-[Docker Hub &rsaquo;](/learn/containers/docker-hub.html "nav next containers")
+[Using Containers &rsaquo;](/learn/containers/using-containers.html "nav next containers")

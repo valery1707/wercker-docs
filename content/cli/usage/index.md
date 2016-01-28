@@ -33,7 +33,7 @@ GLOBAL OPTIONS:
 ### Detect
 
 The *detect* command introspects your projects and generates
-[wercker.yml](/learn/wercker-yml/introduction.html) files for your
+[wercker.yml](/learn/basics/configuration.html) files for your
 projects.
 
 > Currently go, python, nodejs and ruby are supported in the detect

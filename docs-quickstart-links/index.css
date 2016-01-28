@@ -1,0 +1,77 @@
+/**
+ * Doc quickstart links.
+ */
+
+#devcenter .quickstart-links {
+  margin-top: 60px;
+}
+
+.quickstart-links h3 {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.quickstart-links-holder {
+  align-content: space-around;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 800px;
+}
+
+.quickstart-links-item {
+  flex: 1 1 50%;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.quickstart-logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 100px;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.quickstart-links-item:hover .quickstart-logo img {
+  transform: translateY(0);
+}
+.quickstart-links-item:hover .quickstart-logo img +img {
+  transform: translateY(-204px);
+}
+
+.quickstart-logo img {
+  transform: translateY(50px);
+  transition: transform var(--duration_base) var(--easing-bounce_smooth);
+}
+
+.quickstart-logo img + img {
+  transform: translateY(-104px);
+  transition: transform var(--duration_base) var(--easing-bounce_smooth);
+}
+
+.quickstart-links-item h5 {
+  margin-top: 10px;
+}
+
+/**
+ * Responsive rules for screens starting at 768px width
+ */
+
+@media screen and (min-width: 768px) {
+  .quickstart-links {
+    padding: 0;
+  }
+
+  .quickstart-links-item {
+    flex: 1 1 25%;
+    margin-bottom: 0;
+  }
+}

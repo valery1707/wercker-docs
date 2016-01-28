@@ -1,18 +1,24 @@
 ## Introduction to pipelines
 
-A key concept within wercker is the *pipeline*; a sequence of steps aimed at building,
-testing and delivering your applications.
+The pipeline is the heart and soul of wercker, it’s where you define the
+actions (steps) and environment for your tasks, often your tests, builds and
+deploys.
 
-Currently wercker support two types of pipelines; a **build** and a
-**deploy** pipeline. Pipelines can be executed [locally](/learn/build/local-builds.html) through the
-[CLI](/learn/basics/the-wercker-cli.html), and on the wercker platform.
+Pipelines are an aggregate of steps and will pass or fail based on the
+[steps](/learn/steps/introduction.html) within. Each pipeline also comes with
+an environment, some set by default by the wercker tool and, when run by
+wercker.com, others defined by the settings you’ve entered on
+[wercker](https://app.wercker.com) itself. Steps are the actions performed
+within pipelines.
 
-> A key benefit of wercker is that you can customize your pipelines
+![image](/images/pipelines.svg)
 
-![image](/images/pipelines.png)
+Currently wercker support three types of pipelines; a **dev**, **build** and a
+**deploy** pipeline. Pipelines can be executed locally through the
+[CLI](/learn/basics/workflow.html) and on the wercker platform, with the
+exception of the **dev** pipeline which can **only** be executed locally.
 
-> A pipeline consists of steps and can either fail or pass
-
-In the following paragraphs we will describe the elements that make up the wercker pipeline.
+In the following paragraphs we will describe the elements that make up the
+wercker pipeline.
 
 [How it works &rsaquo;](/learn/pipelines/how-it-works.html "nav next pipelines")

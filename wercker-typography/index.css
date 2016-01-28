@@ -6,8 +6,8 @@
   --lineHeight_tighter: 12px;
   --lineHeight_tight: 18px;
   --lineHeight_base: 26px;
-  --lineHeight_loose: 32px;
-  --lineHeight_looser: 44px;
+  --lineHeight_loose: 38px;
+  --lineHeight_looser: 48px;
   --lineHeight_loosest: 64px;
 }
 
@@ -15,16 +15,16 @@
  * Font sizes scale.
  */
 :root {
-  --fontSize_micro: 8px;
-  --fontSize_smallest: 10px;
+  --fontSize_micro: 10px;
+  --fontSize_smallest: 12px;
   --fontSize_smaller: 13px;
-  --fontSize_small: 14px;
-  --fontSize_base: 16px;
-  --fontSize_medium: 18px;
-  --fontSize_large: 22px;
-  --fontSize_larger: 36px;
-  --fontSize_largest: 56px;
-  --fontSize_jumbo: 140px;
+  --fontSize_small: 15px;
+  --fontSize_base: 18px;
+  --fontSize_medium: 22px;
+  --fontSize_large: 28px;
+  --fontSize_larger: 46px;
+  --fontSize_largest: 66px;
+  --fontSize_jumbo: 80px;
 }
 
 /**
@@ -41,40 +41,18 @@
  * Typography settings.
  */
 
-.DINNextLTPro-Bold {
-  font-family: DINNextLTPro-Bold;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.DINNextLTPro-Regular {
-  font-family: DINNextLTPro-Regular;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.DINNextLTPro-Medium {
-  font-family: DINNextLTPro-Medium;
-  font-weight: normal;
-  font-style: normal;
-}
-
-.DINNextLTPro-Light {
-  font-family: DINNextLTPro-Light;
-  font-weight: normal;
-  font-style: normal;
-}
 
 html,
 body,
-a {
-  font-family: 'Open Sans', sans-serif;
+p, a, h2, h3, h4, h5 {
+  font-family: 'CorporateS-Light', sans-serif;
+  font-size: var(--fontSize_base);
+  color: var(--color-grey_darker);
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 a {
   color: var(--color-skyblue_base);
-  font-size: var(--fontSize_small);
-  font-weight: var(--fontWeight_light);
   line-height: var(--lineHeight_tight);
 }
 
@@ -83,29 +61,14 @@ a:hover {
 }
 
 p {
-  font-family: 'Merriweather', serif;
   line-height: var(--lineHeight_loose);
-  color: var(--color-blue_base);
-  font-size: var(--fontSize_small);
-  font-weight: var(--fontWeight_light);
-  word-wrap: break-word;
-  text-justify: distribute;
-  word-spacing: 0px;
-  text-align: justify;
-}
-
-article p, .docs-articles p {
-  font-family: 'Merriweather', serif;
-  margin-top: 15px;
-  text-justify: inter-word;
-  text-align: justify;
+  font-size: var(--fontSize_medium);
 }
 
 em {
-  font-size: var(--fontSize_small);
-  font-weight: var(--fontWeight_light);
-  color: var(--color-grey_base);
-  font-style: italic;
+  font-size: inherit;
+  color: var(--color-grey_darker);
+  font-family: 'CorporateS-Regular-Italic', sans-serif;
 }
 
 h1 {
@@ -117,51 +80,33 @@ h1 {
 }
 
 h2 {
-  font-family: DINNextLTPro-Light;
+  font-family: 'CorporateS-Light', sans-serif;
   line-height: var(--lineHeight_looser);
   font-size: var(--fontSize_larger);
-  color: var(--color-blue_base);
-  letter-spacing: -1px;
   margin-top: 30px;
-  margin-bottom: 20px;
-}
-
-h2 + p {
-  line-height: var(--lineHeight_loose);
-  font-weight: var(--fontWeight_base);
-  font-size: var(--fontSize_medium);
-  color: var(--color-blue_light);
-  margin-top: 20px;
   margin-bottom: 30px;
 }
 
-h2 + p > a, h2 + p > em {
-  font-family: 'Merriweather', serif;
-  line-height: var(--lineHeight_loose);
-  font-weight: var(--fontWeight_base);
-  font-size: var(--fontSize_medium);
-}
-
 h3 {
+  font-family: 'CorporateS-Regular', sans-serif;
   line-height: var(--lineHeight_loose);
-  font-weight: var(--fontWeight_base);
   font-size: var(--fontSize_large);
-  color: var(--color-blue_base);
+  color: var(--color-grey_darker);
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h4 {
+  font-family: 'CorporateS-Demi', sans-serif;
   line-height: var(--lineHeight_base);
-  font-weight: var(--fontWeight_semibold);
   font-size: var(--fontSize_medium);
-  color: var(--color-blue_light);
-  margin-top: 30px;
+  color: var(--color-grey_darker);
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 h5 {
   line-height: var(--lineHeight_tight);
-  font-weight: var(--fontWeight_base);
   font-size: var(--fontSize_base);
   color: var(--color-blue_light);
   margin-top: 18px;
@@ -176,28 +121,14 @@ code {
 
 ul li,
 ol li {
-  font-family: 'Merriweather', serif;
+  font-family: 'CorporateS-Light', sans-serif;
   line-height: var(--lineHeight_tight);
-  font-weight: var(--fontWeight_light);
-  font-size: var(--fontSize_small);
-  color: var(--color-blue_light);
+  font-size: var(--fontSize_base);
+  color: var(--color-grey_dark);
   margin-top: 15px;
   margin-bottom: 5px;
 }
 
 strong {
-  font-weight: var(--fontWeight_bold);
+  font-family: 'CorporateS-Demi', sans-serif;
 }
-
-/*
-@media screen and (max-width: 768px) {
-  h1 {
-    line-height: var(--lineHeight_looser);
-    font-size: var(--fontSize_larger);
-  }
-
-  h4 {
-    line-height: var(--lineHeight_base);
-    font-size: var(--fontSize_small);
-  }
-}*/

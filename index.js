@@ -2,7 +2,6 @@ var breadCrumb = require('./docs-bread-crumb');
 var learnblocks = require('./docs-learnblocks');
 var sidebar = require('./docs-sidebar');
 var nav = require('./docs-nav');
-var header = require('./docs-header');
 var quicklinks = require('./docs-quicklinks');
 var tocMenu = require('./docs-toc-menu');
 var react = require('react');
@@ -17,9 +16,6 @@ if (learnblocksSelector) react.renderComponent(learnblocks(), learnblocksSelecto
 
 var navSelector = document.querySelector('.nav-sticky');
 if (navSelector) react.renderComponent(nav(), navSelector);
-
-var headerSelector = document.querySelector('.header');
-if (headerSelector) react.renderComponent(header(), headerSelector);
 
 var quickLinksSelector = document.querySelector('.quicklinks');
 if (quickLinksSelector) react.renderComponent(quicklinks(), quickLinksSelector);

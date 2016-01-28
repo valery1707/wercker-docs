@@ -10,25 +10,26 @@ infrastructure such that it can be used in deploy pipelines. The
 artifact is stored both as a *container* and a *tarball* of just the source
 files.
 
-![image](/images/pipeline-build.png)
+![image](/images/pipeline-build.svg)
 
 When a build pipeline starts it uses the *box* section in your
-[wercker.yml](/learn/wercker-yml/introduction.html) file as a base container and pulls it in from the
-[Docker Hub](/learn/containers/docker-hub.html), after which the
-[steps](/learn/steps/introduction.html) as defined in your `wercker.yml` are executed.
+[wercker.yml](/learn/basics/configuration.html) file as a base container and
+pulls it in from the [Docker Hub](http://dockerhub.com), after which the
+[steps](/learn/steps/introduction.html) as defined in your `wercker.yml` are
+executed.
 
-Any [service](/learn/wercker-yml/sections.html#services)
-container that was specified as well will be spun up as a *separate
-container* and available during the build pipeline. Communication with
-service containers is done through [environment variables](/learn/containers/using-containers.html).
+Any [service](/learn/containers/services.html) container that was also
+specified will be spun up as a *separate container* and be available
+during the build pipeline. Communication with service containers is done
+through [environment variables](/learn/containers/using-containers.html).
 
-![image](/images/pipeline-service.png)
+![image](/images/pipeline-service.svg)
 
 The starting point for a *deploy pipeline* is the artifact that was
 created during the build pipeline.
 
-Within pipelines [environment variables](/learn/pipelines/using-env-vars.html)
-can be used to for tokens, passwords and other configuration information that
+Within pipelines, [environment variables](/learn/basics/configuration.html)
+can be used for tokens, passwords and other configuration information that
 might be needed during the lifetime and execution of a pipeline.
 
 - - -
@@ -36,4 +37,4 @@ might be needed during the lifetime and execution of a pipeline.
 > [docs](/docs/pipelines/per-pipeline-containers.html)
 
 [&lsaquo; Introduction to pipelines ](/learn/pipelines/introduction.html "nav previous pipelines")
-[Using env vars &rsaquo;](/learn/pipelines/using-env-vars.html "nav next pipelines")
+[Available Pipelines &rsaquo;](/learn/pipelines/available-pipelines.html "nav next pipelines")

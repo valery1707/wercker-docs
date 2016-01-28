@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="68px" viewBox="0 0 48 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Group" sketch:type="MSLayerGroup" stroke="#B0B8C6">
+            <path d="M45.3083333,57.0769231 C47.3458333,57.0769231 48,56.4037802 48,54.3381978 L48,2.73872527 C48,0.815948293 47.4331591,0.0997318737 45.7113302,0.0098900389 C45.5834492,0.00321744894 47.4491973,0 47.3083333,0 L2.69166667,0 C0.652083333,0 0,0.673142857 0,2.73872527 L0,46.6813187 L0,55.3381978 L0,62.8243516 C0,66.2297143 1.775,68 5.1875,68 L18.54375,68 L37.8416667,68 L45.898535,68 C47.0791667,68 48,67.0821978 48,65.9470769 C48,64.811956 46.99707,63.9571155 45.898535,64.0629616 L6.1875,64 C5.04791667,63.8941538 4.12083333,62.9658022 4.12083333,61.8243516 L4.12083333,57.0769231 L45.3083333,57.0769231 Z" id="Stroke-1" sketch:type="MSShapeGroup"></path>
+            <path d="M4.5,58.5 L45.5,58.5" id="Line" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M4.5,60.5 L45.5,60.5" id="Line" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M4.5,62.5 L45.5,62.5" id="Line" stroke-linecap="round" sketch:type="MSShapeGroup"></path>
+            <path d="M6,0 L18,0 L18,33 L12.1970158,30 L6,33 L6,0 Z" id="Rectangle-32" fill-opacity="0.1" fill="#F9FBFF" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

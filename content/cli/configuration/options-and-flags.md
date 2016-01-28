@@ -49,6 +49,7 @@ OPTIONS:
    --docker-local					Don't interact with remote repositories
    --direct-mount					Mount our binds read-write to the pipeline path.
    --publish [--publish option --publish option]	Publish a port from the main container, same format as docker --publish.
+   --enable-gitignore					Parse gitignore file to ignore files in your build
    --commit 						Commit the build result locally.
    --tag 						Tag for this build. [$WERCKER_GIT_BRANCH]
    --message 						Message for this build.
@@ -64,6 +65,7 @@ OPTIONS:
    --no-response-timeout "5"				Timeout if no script output is received in this many minutes.
    --command-timeout "25"				Timeout if command does not complete in this many minutes.
    --wercker-yml 					Specify a specific yaml file.
+
 ```
 
 ***
@@ -152,6 +154,13 @@ When storing artefacts on S3, specify which bucket it needs to be saved to.
 `--aws-region`
 
 When storing artefacts on S3, specify which region wercker should use.
+
+#### <a name="enable-gitignore" class="anchor"></a>Enable gitignore
+
+
+`--enable-gitignore`
+
+When building a container, don't include files that are inside your `.gitignore` to your container. Enabled by default by `wercker dev` and `wercker build`. Disabled by default on `wercker deploy`. To disable set to false as so `--enable-gitignore=false`.
 
 ***
 ***

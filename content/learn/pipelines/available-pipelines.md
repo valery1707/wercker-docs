@@ -83,21 +83,31 @@ scheduler (such as [Kubernetes](/quickstarts/deployment/kubernetes.html) or
 new version of a container image ready to be scheduled.
 
 ```yaml
-# Example deploy pipeline
+# wercker.yml
+(...)
 deploy:
-    steps:
-        # Execute the s3sync deploy step, a step provided by wercker
-        - s3sync:
-            key_id: $AWS_ACCESS_KEY_ID
-            key_secret: $AWS_SECRET_ACCESS_KEY
-            bucket_url: $AWS_BUCKET_URL
-            source_dir: build/
+  steps:
+    - internal/docker-push:
+        username: $USERNAME
+        password: $PASSWORD
+        tag: my-amazing-tag
+        cmd: my-amazing-command
+        ports: "5000"
+        repository: turing/bar
+        registry: https://registry.hub.docker.com
 ```
 
-Here we see the Amazon Web Services S3 synchronization step that can
-sync static assets to S3. Environment variables are used that hold the
-correct credentials. The values of these environment variables are
-specified through the [wercker web interface](/learn/basics/configuration.html).
+In this example, we see that our container is being deployed to DockerHub.  To
+do this, we use one of [internal](/docs/steps/internal-steps.html) - steps that
+are baked into the [wercker CLI](http://wercker.com/cli).  Environment
+variables are used to hold the correct credentials. The values of these
+environment variables are specified through the [wercker web
+interface](/learn/basics/configuration.html). Alternatively, you can export
+these variables in your local [ENVIRONMENT](/learn/basics/configuration.html)
+file. 
+
+> The container will be pushed to DockerHub as-is. So be mindful of which things
+you actually include in your container!
 
 We've covered a lot of ground on this page but fortunately there are dedicated
 sections for topics such as [pipelines](/learn/pipelines/introduction.html),

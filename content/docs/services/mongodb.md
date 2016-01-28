@@ -40,4 +40,4 @@ MONGO_PORT_27017_TCP_PORT
 
 To learn about how to find out the IP address of a service container you should
 use the environment variables exposed by Docker. You can read more about that in
-our article [_available env vars_](/docs/services/available-env-vars.html).
+our article [_available env vars_](/docs/environment-variables/available-env-vars.html).

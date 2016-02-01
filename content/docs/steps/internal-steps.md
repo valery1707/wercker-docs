@@ -39,7 +39,7 @@ The `internal/docker-push` step supports the following properties:
 - `repository`: The name of the repository. When using a non Docker Hub
   repository, prefix the value with the host of the private repository.
 - `tag`: A space or comma separated list of Docker tags that will be applied to the built container. Wercker will automatically apply a tag with the build number, and if `tag` is left blank wercker will use the docker default of `latest`.
-- force-tags: Force apply tags on docker images built by wercker (see [docker documentation](https://docs.docker.com/engine/reference/api/docker_remote_api_v1.20/#tag-an-image-into-a-repository)). Defaults to true.
+- `force-tags`: Force apply tags on docker images built by wercker (see [docker documentation](https://docs.docker.com/engine/reference/api/docker_remote_api_v1.20/#tag-an-image-into-a-repository)). Defaults to true.
 - `ports`: Comma separated list of ports which can be exposed. The number can
   end with `/tcp` or `/udp`. If omitted,`/tcp` will be used. This is the
   equivelant of `EXPOSE` in a Dockerfile.

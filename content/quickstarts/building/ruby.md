@@ -95,12 +95,12 @@ dev:
 ```
 
 In the `dev` clause we define what we want to happen in our development
-pipeline, which in this case are two steps: `bundle-install` and `internal-watch`.
+pipeline, which in this case are two steps: `bundle-install` and `internal/watch`.
 These `steps` are pre-written bash scripts written by either wercker or the
 community. You can read more about steps
 [here](/docs/steps/index.html)
 
-`internal-watch` watches your files for changes, and if `reload` is set to
+`internal/watch` watches your files for changes, and if `reload` is set to
 `true` it restarts your app so your changes are reflected immediately. This is
 especially useful for when you're developing webapps, as we're doing now.
 

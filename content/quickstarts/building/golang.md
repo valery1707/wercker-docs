@@ -72,7 +72,7 @@ specified. You can read more about containers
 In the `dev` clause we define what we want to happen in our development
 pipeline, which in this case is just one step: `internal/watch`.
 
-`internal-watch` watches your files for changes, and if `reload` is set to
+`internal/watch` watches your files for changes, and if `reload` is set to
 `true` it restarts your app so your changes are reflected immediately. This is
 especially useful for when you're developing webapps, as we're doing now.
 

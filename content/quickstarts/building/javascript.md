@@ -63,7 +63,7 @@ community. You can read more about steps [here](/docs/steps/index.html)
 
 `npm-install` is a wercker step that, unsurprisingly, runs `npm-install`.
 
-`internal-watch` watches your files for changes, and if `reload` is set to
+`internal/watch` watches your files for changes, and if `reload` is set to
 `true` it restarts your app so your changes are reflected immediately. This is
 especially useful for when you're developing webapps, as we're doing now.
 

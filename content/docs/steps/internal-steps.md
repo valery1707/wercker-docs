@@ -38,8 +38,8 @@ The `internal/docker-push` step supports the following properties:
   registry.
 - `repository`: The name of the repository. When using a non Docker Hub
   repository, prefix the value with the host of the private repository.
-- `tag`: The Docker tag which will be used. If left empty this defaults to
-  Docker's default, which is `latest`.
+- `tag`: A space or comma separated list of Docker tags that will be applied to the built container. Wercker will automatically apply a tag with the build number, and if `tag` is left blank wercker will use the docker default of `latest`.
+- `force-tags`: Force apply tags on docker images built by wercker (see [docker documentation](https://docs.docker.com/engine/reference/api/docker_remote_api_v1.20/#tag-an-image-into-a-repository)). Defaults to true.
 - `ports`: Comma separated list of ports which can be exposed. The number can
   end with `/tcp` or `/udp`. If omitted,`/tcp` will be used. This is the
   equivelant of `EXPOSE` in a Dockerfile.
@@ -65,8 +65,8 @@ The `internal/docker-push` step supports the following properties:
   Docker hub. For pushes to other registries, it should start with `https://`
   and should be the same as the prefix of the `repository`.
 - `user`: String value specifying the user inside the container.
-- `env` - A list of environment variables in the form of `["VAR=value"[,"VAR2=value2"]]`
-- `labels` - Adds a map of labels to a container. To specify a map, pass your labels into the `wercker.yml` file in this format `["LABEL=label"[,"LABEL2=label2"]]`
+- `env` - A list of environment variables in the form of `["VAR=value"[,"VAR2=value2"]]`. Can be delimited by spaces or commas.
+- `labels` - Adds a map of labels to a container. To specify a map, pass your labels into the `wercker.yml` file in this format `["LABEL=label"[,"LABEL2=label2"]]`. Can be delimited by spaces or commas.
 - `stopsignal` - Signal to stop a container as a string or unsigned integer. `SIGTERM` by default.
 
 It is possible to use environment variables inside all properties, these will

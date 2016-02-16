@@ -42,18 +42,18 @@ The `internal/docker-push` step supports the following properties:
 - `force-tags`: Force apply tags on docker images built by wercker (see [docker documentation](https://docs.docker.com/engine/reference/api/docker_remote_api_v1.20/#tag-an-image-into-a-repository)). Defaults to true.
 - `ports`: Comma separated list of ports which can be exposed. The number can
   end with `/tcp` or `/udp`. If omitted,`/tcp` will be used. This is the
-  equivelant of `EXPOSE` in a Dockerfile.
+  equivalent of `EXPOSE` in a Dockerfile.
 - `volumes`: Comma separated list of volumes which will be exposed. This is the
-  equivelant of `VOLUME` in a Dockerfile.
+  equivalent of `VOLUME` in a Dockerfile.
 - `working-dir`: Override the working directory of the container. This is the
-  equivelant of `WORKDIR` in a Dockerfile.
-- `author`: Set the author of the container. This is the equivelant of
+  equivalent of `WORKDIR` in a Dockerfile.
+- `author`: Set the author of the container. This is the equivalent of
   `MAINTAINER` in a Dockerfile.
-- `cmd`: Set the cmd for the new container. This is the equivelant of `CMD` in
+- `cmd`: Set the cmd for the new container. This is the equivalent of `CMD` in
   a Dockerfile. We only support a single string value, which will be converted
   to exec form using [go-shlex](https://github.com/flynn-archive/go-shlex).
 - `entrypoint`: Set the entrypoint for the new container. This is the
-  equivelant of `ENTRYPOINT` in a Dockerfile. We only support a single string
+  equivalent of `ENTRYPOINT` in a Dockerfile. We only support a single string
   value, which will be converted to exec form using [go-shlex](https://github.com/flynn-archive/go-shlex).
 - `disable-sync`: Disable syncing of the environment variables before running
   this step. Some containers do not support syncing of environment variables,

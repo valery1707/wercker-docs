@@ -8,7 +8,7 @@ apply to every other programming language.
 ### Requirements
 To be able to follow along with this guide, you will need the following things:
 * [A wercker account](https://app.wercker.com/users/new/)
-* [The wercker CLI](http://wercker.com/cli/installl)
+* [The wercker CLI](http://wercker.com/cli/install)
 
 ### Setting up the app
 Before we can start developing, we have to fork and clone the [sample

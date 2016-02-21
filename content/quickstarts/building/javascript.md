@@ -37,7 +37,7 @@ let's take a closer look at this `dev` _pipeline_ right now.
 
 ```yaml
 # The container definition we want to use for developing our app
-box: nodesource/trusty
+box: node:4.2.6-slim
 # Defining the dev pipeline
 dev:
   steps:
@@ -136,7 +136,7 @@ build and deploy our app for us.
 First, let's revisit our **wercker.yml** again.
 
 ```yaml
-box: nodesource/trusty
+box: node:4.2.6-slim
 dev:
   steps:
     - npm-install

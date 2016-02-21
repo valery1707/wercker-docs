@@ -173,7 +173,7 @@ build:
 ```
 
 #### Build Pipeline
-We're now interested in what's happening the _build_ pipeline.  We've added
+We're now interested in what's happening the _build_ pipeline.  We've
 added several new steps, to begin with the `wercker/golint` step. This step
 checks our code and fails if it thinks we're not doing a good job.  We've also
 added a new kind of step: a _script step_. This script step is a piece of

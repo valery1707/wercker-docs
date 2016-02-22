@@ -29,12 +29,12 @@
 
 .quickstart-logo {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   display: block;
   margin: 0 auto;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 85px;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
@@ -44,16 +44,16 @@
   transform: translateY(0);
 }
 .quickstart-links-item:hover .quickstart-logo img +img {
-  transform: translateY(-204px);
+  transform: translateY(-174px);
 }
 
 .quickstart-logo img {
-  transform: translateY(50px);
+  transform: translateY(79px);
   transition: transform var(--duration_base) var(--easing-bounce_smooth);
 }
 
 .quickstart-logo img + img {
-  transform: translateY(-104px);
+  transform: translateY(-89px);
   transition: transform var(--duration_base) var(--easing-bounce_smooth);
 }
 
@@ -71,7 +71,7 @@
   }
 
   .quickstart-links-item {
-    flex: 1 1 25%;
+    flex: 1 1 20%;
     margin-bottom: 0;
   }
 }

@@ -46,11 +46,13 @@ var quickstartLinkGolang = document.querySelector('#quickstart-link-golang');
 var quickstartLinkJavascript = document.querySelector('#quickstart-link-javascript');
 var quickstartLinkRuby = document.querySelector('#quickstart-link-ruby');
 var quickstartLinkPython = document.querySelector('#quickstart-link-python');
+var quickstartLinkPhp = document.querySelector('#quickstart-link-php');
 
 quickstartLinkGolang.onclick = trackCorporateClick;
 quickstartLinkJavascript.onclick = trackCorporateClick;
 quickstartLinkRuby.onclick = trackCorporateClick;
 quickstartLinkPython.onclick = trackCorporateClick;
+quickstartLinkPhp.onclick = trackCorporateClick;
 
 /**
  * Sign up clicks on sub pages

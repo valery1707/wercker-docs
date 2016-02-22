@@ -182,7 +182,7 @@ body.sidebar-open .docs-articles {
 
 .docs-articles > ul li:before,
 .docs-articles > ol li:before {
-  content: "• ";
+  content: "\2022 ";
   color: var(--color-blue_light);
 }
 

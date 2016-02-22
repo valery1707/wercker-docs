@@ -36,6 +36,13 @@ with one of these tutorials:
         </span>
         <h5>Python</h5>
       </a>
+      <a href="/quickstarts/building/php.html" class="quickstart-links-item" id="quickstart-link-php">
+        <span class="quickstart-logo">
+          <img src="/images/quickstarts-php.png" width="100" height="100" alt="PHP quickstart">
+          <img src="/images/quickstarts-php.png" width="100" height="100" alt="PHP quickstart">
+        </span>
+        <h5>PHP</h5>
+      </a>
     </div>
   </div>
 </section>

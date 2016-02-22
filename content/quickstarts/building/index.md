@@ -9,3 +9,4 @@ Get started using your favorite language:
 * [Javascript](/quickstarts/building/javascript.html)
 * [Python](/quickstarts/building/python.html)
 * [Ruby](/quickstarts/building/ruby.html)
+* [PHP](/quickstarts/building/php.html)
